@@ -1,0 +1,12 @@
+; Dummy atoms and bonded interactions for alchemical mutagenesis
+;     A note on notation: '-' or '*' indicates a bond between atom (names)
+;       a '-' denotes a regular bond
+;       a '*' denotes a bond where the atom to the right is a dummy atom
+
+[ atomtypes ]
+;atmname    atmnum   wt      chrg    type  sigma        eps
+DUM_OH       8       16.00   0.0000  A   0.00000e+00  0.00000e+00
+DUM_CT       6       12.01   0.0000  A   0.00000e+00  0.00000e+00
+DUM_HO       1       1.008   0.0000  A   0.00000e+00  0.00000e+00
+DUM_HC       1       1.008   0.0000  A   0.00000e+00  0.00000e+00
+
