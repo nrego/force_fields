@@ -538,3 +538,11 @@ S2A 5
 2   6   HB  CB  CA  OG  
 1   5   HB3 CB  CA  HB1 HB2
 1   2   HG  OG  CB  CA  
+I2A 7
+1   1   H   N   -C  CA  
+1   5   HA  CA  N   CB  C   
+1   5   HB1 CB  CA  CG2 CG1 
+2   6   HB  CB  CA  HB1
+3   4   HG2 CG2 CB  CA  
+2   6   HG1 CG1 CB  CD  
+3   4   HD  CD  CG1 CB  
