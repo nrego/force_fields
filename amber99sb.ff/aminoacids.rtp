@@ -3548,6 +3548,155 @@
     -C    CA     N     H
     CA    +N     C     O
 
+; ADDED by nrego
+;  7/20/17
+[ I2A ]
+ [ atoms ]
+     N    N           -0.41570     1
+     H    H            0.27190     2
+    CA    CT          -0.05970     3
+    HA    H1           0.08690     4
+    CB    CT           0.13030     5
+   HB1    HC           0.01870     6
+   HB2    HC               0.0     7
+   HB3    HC               0.0     8
+   CG2    CT          -0.32040     9
+  HG21    HC           0.08820    10
+  HG22    HC           0.08820    11
+  HG23    HC           0.08820    12
+   CG1    CT          -0.04300    13
+  HG11    HC           0.02360    14
+  HG12    HC           0.02360    15
+    CD    CT          -0.06600    16
+   HD1    HC           0.01860    17
+   HD2    HC           0.01860    18
+   HD3    HC           0.01860    19
+     C    C            0.59730    20
+     O    O           -0.56790    21
+ [ bonds ]
+     N     H
+     N    CA
+    CA    HA
+    CA    CB
+    CA     C
+    CB   HB1           0.10900   284512.0 ; CT-HC
+    CB   HB2           0.10900   284512.0 ; CT-HC
+    CB   HB3           0.10900   284512.0 ; CT-HC
+    CB   CG2
+    CB   CG1
+   CG2  HG21
+   CG2  HG22
+   CG2  HG23
+   CG1  HG11
+   CG1  HG12
+   CG1    CD
+    CD   HD1
+    CD   HD2
+    CD   HD3
+     C     O
+    -C     N
+ [ exclusions ]
+   HB2   CG2
+   HB2  HG21
+   HB2  HG22
+   HB2  HG23
+   HB2   CG1
+   HB2  HG11
+   HB2  HG12
+   HB2    CD
+   HB2   HD1
+   HB2   HD2
+   HB2   HD3
+   HB3   CG2
+   HB3  HG21
+   HB3  HG22
+   HB3  HG23
+   HB3   CG1
+   HB3  HG11
+   HB3  HG12
+   HB3    CD
+   HB3   HD1
+   HB3   HD2
+   HB3   HD3
+ [ angles ]
+   HB2    CB   CG2   0   0   
+   HB2    CB   CG1   0   0   
+   HB3    CB   CG2   0   0   
+   HB3    CB   CG1   0   0   
+ [ dihedrals ]
+   HB2    CB   CG2   HG21   0   0   0 
+   HB2    CB   CG2   HG22   0   0   0
+   HB2    CB   CG2   HG23   0   0   0
+   HB2    CB   CG1   HG11   0   0   0
+   HB2    CB   CG1   HG12   0   0   0
+   HB2    CB   CG1     CD   0   0   0 
+   HB3    CB   CG2   HG21   0   0   0  
+   HB3    CB   CG2   HG22   0   0   0
+   HB3    CB   CG2   HG23   0   0   0
+   HB3    CB   CG1   HG11   0   0   0
+   HB3    CB   CG1   HG12   0   0   0
+   HB3    CB   CG1     CD   0   0   0
+ [ impropers ]
+    -C    CA     N     H
+    CA    +N     C     O
+    
+; ADDED by Nrego
+; Serine-Alanine hybrid residue
+[ S2A ]
+ [ atoms ]
+     N    N           -0.41570     1
+     H    H            0.27190     2
+    CA    CT          -0.02490     3
+    HA    H1           0.08430     4
+    CB    CT           0.21170     5
+   HB1    H1           0.03520     6
+   HB2    H1           0.03520     7
+   HB3    HC           0.00000     8
+    OG    OH          -0.65460     9
+    HG    HO           0.42750    10
+     C    C            0.59730    11
+     O    O           -0.56790    12
+ [ bonds ]
+     N     H
+     N    CA
+    CA    HA
+    CA    CB
+    CA     C
+    CB   HB1
+    CB   HB2
+    CB   HB3           0.10900   284512.0  ; CT-HC
+    CB    OG           0.14100   267776.0  ; CT-OH
+    OG    HG           0.09600   462750.4  ; HO-OH
+     C     O
+    -C     N
+ [ exclusions ]
+   HB3    OG
+   HB3    HG
+ [ angles ]
+    OG   CB   HB3     0    0   ; non-physical
+    OG   CB   HB1   109.500    418.400 ; OH-CT-H1
+    OG   CB   HB2   109.500    418.400
+    OG   CB    CA   109.500    418.400 ; CT-CT-OH
+    HG   OG    CB   108.500    460.240 ; CT-OH-HO
+   HB3   CB   HB1   109.500    292.880 ; HC-CT-HC or H1-CT-H1
+   HB3   CB   HB2   109.500    292.880
+   HB3   CB    CA   109.500    418.400 ; HC-CT-CT
+ [ dihedrals ]
+    HG   OG   CB  HB3    0   0   0  ; non-physical dihed
+    HG   OG   CB  HB1    0.0      0.69733     3  ; X-OH-CT-X ?
+    HG   OG   CB  HB2    0.0      0.69733     3
+    HG   OG   CB   CA    0.0      0.66944     3  ; HO-OH-CT-CT
+    HG   OG   CB   CA    0.0      1.04600     1
+    OG   CB   CA   HA    0.0      1.04600     1  ; H1-CT-CT-OH
+    OG   CB   CA    N    0.0      0.65084     3  ; X-CT-CT-X
+    OG   CB   CA    C    0.0      0.65084     3  ; X-CT-CT-X
+   HB3   CB   CA   HA    0.0      0.65084     3  ; X-CT-CT-X
+   HB3   CB   CA    N    0.0      0.65084     3  ; X-CT-CT-X
+   HB3   CB   CA    C    0.0      0.65084     3  ; X-CT-CT-X
+ [ impropers ]
+    -C    CA     N     H
+    CA    +N     C     O
+
 ; Added by NRego
 ; Hybrid LEU-ALA residue for alchemical transformations
 ; test for default params
@@ -3615,66 +3764,9 @@
     -C    CA     N     H
     CA    +N     C     O
 
-; ADDED by Nrego
-; Serine-Alanine hybrid residue
-[ S2A ]
- [ atoms ]
-     N    N           -0.41570     1
-     H    H            0.27190     2
-    CA    CT          -0.02490     3
-    HA    H1           0.08430     4
-    CB    CT           0.21170     5
-   HB1    H1           0.03520     6
-   HB2    H1           0.03520     7
-   HB3    HC           0.00000     8
-    OG    OH          -0.65460     9
-    HG    HO           0.42750    10
-     C    C            0.59730    11
-     O    O           -0.56790    12
- [ bonds ]
-     N     H
-     N    CA
-    CA    HA
-    CA    CB
-    CA     C
-    CB   HB1
-    CB   HB2
-    CB   HB3           0.10900   284512.0  ; CT-HC
-    CB    OG           0.14100   267776.0  ; CT-OH
-    OG    HG           0.09600   462750.4  ; HO-OHk
-     C     O
-    -C     N
- [ exclusions ]
-   HB3    OG
-   HB3    HG
- [ angles ]
-    OG   CB   HB3     0    0   ; non-physical
-    OG   CB   HB1   109.500    418.400 ; OH-CT-H1
-    OG   CB   HB2   109.500    418.400
-    OG   CB    CA   109.500    418.400 ; CT-CT-OH
-    HG   OG    CB   108.500    460.240 ; CT-OH-HO
-   HB3   CB   HB1   109.500    292.880 ; HC-CT-HC or H1-CT-H1
-   HB3   CB   HB2   109.500    292.880
-   HB3   CB    CA   109.500    418.400 ; HC-CT-CT
- [ dihedrals ]
-    HG   OG   CB  HB3    0   0   0  ; non-physical dihed
-    HG   OG   CB  HB1    0.0      0.69733     3  ; X-OH-CT-X ?
-    HG   OG   CB  HB2    0.0      0.69733     3
-    HG   OG   CB   CA    0.0      0.66944     3  ; HO-OH-CT-CT
-    HG   OG   CB   CA    0.0      1.04600     1
-    OG   CB   CA   HA    0.0      1.04600     1  ; H1-CT-CT-OH
-    OG   CB   CA    N    0.0      0.65084     3  ; X-CT-CT-X
-    OG   CB   CA    C    0.0      0.65084     3  ; X-CT-CT-X
-   HB3   CB   CA   HA    0.0      0.65084     3  ; X-CT-CT-X
-   HB3   CB   CA    N    0.0      0.65084     3  ; X-CT-CT-X
-   HB3   CB   CA    C    0.0      0.65084     3  ; X-CT-CT-X
- [ impropers ]
-    -C    CA     N     H
-    CA    +N     C     O
-
 ; ADDED by nrego
 ;  7/20/17
-[ I2A ]
+[ I2At ]
  [ atoms ]
      N    N           -0.41570     1
      H    H            0.27190     2
@@ -3719,6 +3811,47 @@
     CD   HD3
      C     O
     -C     N
+ [ exclusions ]
+   HB2   CG2
+   HB2  HG21
+   HB2  HG22
+   HB2  HG23
+   HB2   CG1
+   HB2  HG11
+   HB2  HG12
+   HB2    CD
+   HB2   HD1
+   HB2   HD2
+   HB2   HD3
+   HB3   CG2
+   HB3  HG21
+   HB3  HG22
+   HB3  HG23
+   HB3   CG1
+   HB3  HG11
+   HB3  HG12
+   HB3    CD
+   HB3   HD1
+   HB3   HD2
+   HB3   HD3
+ [ angles ]
+   HB2    CB   CG2   0   0   
+   HB2    CB   CG1   0   0   
+   HB3    CB   CG2   0   0   
+   HB3    CB   CG1   0   0   
+ [ dihedrals ]
+   HB2    CB   CG2   HG21   0   0   0 
+   HB2    CB   CG2   HG22   0   0   0
+   HB2    CB   CG2   HG23   0   0   0
+   HB2    CB   CG1   HG11   0   0   0
+   HB2    CB   CG1   HG12   0   0   0
+   HB2    CB   CG1     CD   0   0   0 
+   HB3    CB   CG2   HG21   0   0   0  
+   HB3    CB   CG2   HG22   0   0   0
+   HB3    CB   CG2   HG23   0   0   0
+   HB3    CB   CG1   HG11   0   0   0
+   HB3    CB   CG1   HG12   0   0   0
+   HB3    CB   CG1     CD   0   0   0
  [ impropers ]
     -C    CA     N     H
     CA    +N     C     O
