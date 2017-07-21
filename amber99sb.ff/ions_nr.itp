@@ -1,0 +1,44 @@
+; Ions added in ffnonbonded by Nrego according to Joung and Cheatham, J Phys Chem 2008
+
+
+[ moleculetype ]
+; molname       nrexcl
+F               1
+
+[ atoms ]
+; id    at type         res nr  residu name     at name  cg nr  charge
+1       FA              1       F               F       1      -1.00000
+
+[ moleculetype ]
+; molname       nrexcl
+CL              1
+
+[ atoms ]
+; id    at type         res nr  residu name     at name  cg nr  charge
+1       ClA              1       CL              CL       1      -1.00000
+
+[ moleculetype ]
+; molname       nrexcl
+BR              1
+
+[ atoms ]
+; id    at type         res nr  residu name     at name  cg nr  charge
+1       BrA              1       BR              BR       1      -1.00000
+
+[ moleculetype ]
+; molname       nrexcl
+I               1
+
+[ atoms ]
+; id    at type         res nr  residu name     at name  cg nr  charge
+1       IA               1       I              I       1      -1.00000
+
+[ moleculetype ]
+; molname       nrexcl
+NA              1
+
+[ atoms ]
+; id    at type         res nr  residu name     at name  cg nr  charge
+1       NaC              1       NA              NA       1      1.00000
+
+

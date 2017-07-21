@@ -1,0 +1,10 @@
+[ moleculetype ]
+; name	       nrexcl
+Methane        1
+
+[ atoms ]
+;   nr  type    resnr   residu  atom    cgnr    charge  mass
+1	CH4	1	Meth	CH4	1	0	16.0430 ; e = 1.2636 kJ/mol  s = 0.37099 nm
+                                                          ; OW:   e = 0.65017kJ/mol  s = 0.31656 nm
+
+

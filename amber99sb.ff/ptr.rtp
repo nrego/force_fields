@@ -1,0 +1,68 @@
+[ bondedtypes ]
+; bonds  angles  dihedrals  impropers all_dihedrals nrexcl HH14 RemoveDih
+     1       1          9          4        1         3      1     0
+
+;pTyr Residue
+
+[ PTR ]
+ [ atoms ]
+     N    N           -0.51630     1
+     H    H            0.29360     2
+    CA    CT           0.14128     3
+    HA    H1           0.02798     4
+    CB    CT          -0.25117     5
+   HB1    HC           0.08193     6
+   HB2    HC           0.08193     7
+    CG    CA           0.07345     8
+   CD1    CA          -0.19808     9
+   HD1    HA           0.11250    10
+   CE1    CA          -0.25427    11
+   HE1    HA           0.16161    12
+    CZ    C            0.47701    13
+   CE2    CA          -0.25427    14
+   HE2    HA           0.16161    15
+   CD2    CA          -0.19808    16
+   HD2    HA           0.11250    17
+    OH    OV          -0.55794    18
+     P    P	       1.38067    19
+   O1P    OT          -0.94355    20
+   O2P    OT          -0.94355    21
+   O3P    OT          -0.94355    22
+     C    C            0.53660    23
+     O    O           -0.58190    24
+ [ bonds ]
+     N     H
+     N    CA
+    CA    HA
+    CA    CB
+    CA     C
+    CB   HB1
+    CB   HB2
+    CB    CG
+    CG   CD1
+    CG   CD2
+   CD1   HD1
+   CD1   CE1
+   CE1   HE1
+   CE1    CZ
+    CZ   CE2
+   CE2   HE2
+   CE2   CD2
+   CD2   HD2
+    CZ    OH
+    OH     P       
+     P   O1P          
+     P   O2P       
+     P   O3P       
+     C     O
+    -C     N
+ [ impropers ]
+    -C    CA     N     H
+    CA    +N     C     O
+    CG   CE2   CD2   HD2
+    CZ   CD2   CE2   HE2
+   CD1    CZ   CE1   HE1
+    CG   CE1   CD1   HD1
+   CD1   CD2    CG    CB
+   CE1   CE2    CZ    OH
+

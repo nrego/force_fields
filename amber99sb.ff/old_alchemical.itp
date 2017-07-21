@@ -1,0 +1,53 @@
+; Dummy atoms and bonded interactions for alchemical mutagenesis
+;     A note on notation: '-' or '*' indicates a bond between atom (names)
+;       a '-' denotes a regular bond
+;       a '*' denotes a bond where the atom to the right is a dummy atom
+
+[ atomtypes ]
+;atmname    atmnum   wt      chrg    type  sigma        eps
+DUM_OH       8       16.00   0.0000  A   0.00000e+00  0.00000e+00
+DUM_CT       6       12.01   0.0000  A   0.00000e+00  0.00000e+00
+DUM_HO       1       1.008   0.0000  A   0.00000e+00  0.00000e+00
+DUM_HC       1       1.008   0.0000  A   0.00000e+00  0.00000e+00
+
+;TODO: any bonds involving real and dummy atoms should be 
+;      specified explicitly in the topology (by modifying aminoacids.rt)
+;     
+;      This would make it easier to know which bonds must be turned off
+[ bondtypes ]
+; i    j            type    r_0        k
+;DUM_CT CT             1    0.15260   259408.0
+;DUM_CT DUM_CT         1    0.15260   259408.0
+;    CT DUM_HC         1    0.10900   284512.0 
+;DUM_CT DUM_HC         1    0.10900   284512.0 
+;    CT DUM_OH         1    0.14100   267776.0
+;DUM_OH DUM_HO         1    0.09600   462750.4
+
+[ angletypes ]
+;    CT  DUM_CT  DUM_CT           1   109.500    334.720 ; e.g. CB*CG*CD(1,2)
+;    CT      CT  DUM_CT           1   109.500    334.720 ; e.g. CA-CB*CG
+;DUM_CT  DUM_CT  DUM_CT           1   109.500    334.720 ; e.g. CD1*CG*CD2
+;    CT      CT  DUM_HC           1   109.500    418.400 ; e.g. CA-CB*HB3 in L2A
+;DUM_CT      CT      HC           1   109.500    418.400 ; e.g. CG*CB-HB(1,2) in L2A
+;    CT  DUM_CT  DUM_HC           1   109.500    418.400 ; e.g. CB*CG*HG in L2A
+;DUM_CT  DUM_CT  DUM_HC           1   109.500    418.400 ; e.g. *CG*CD1*HD11
+;    HC      CT  DUM_HC           1   109.500    292.880 ; e.g. HB1-CB*HB3
+;DUM_HC  DUM_CT  DUM_HC           1   109.500    292.880 ; e.g. *HD11*CD1*HD12
+;    CT  DUM_OH  DUM_HO           1   108.500    460.240 ; e.g. CB*OH*HO
+;    HC      CT  DUM_OH           1   109.500    418.400 ; e.g. HB1-CB*OH
+;   CT      CT  DUM_OH           1   109.500    418.400 ; e.g. CA-CB*OH
+
+[ dihedraltypes ]
+;    CT      CT  DUM_CT  DUM_CT    9       0.0      0.75312     3  ; e.g. CA-CB*CG*CD1 in L2A
+;    CT      CT  DUM_CT  DUM_CT    9     180.0      1.04600     2  ; 
+;    CT      CT  DUM_CT  DUM_CT    9     180.0      0.83680     1  ; 
+;    HC      CT  DUM_CT  DUM_HC    9       0.0      0.62760     3  ; e.g. HB1-CB*CG*HG
+;DUM_HC  DUM_CT  DUM_CT  DUM_HC    9       0.0      0.62760     3  ; e.g. *HG*CG*CD1*HD11
+;DUM_HC  DUM_CT  DUM_CT      CT    9       0.0      0.66944     3  ; e.g. CB*CG*CD1*HD1
+;    HC      CT  DUM_CT  DUM_CT    9       0.0      0.66944     3  ; e.g. HB1-CB*CG*CD1
+;DUM_HC  DUM_CT      CT      CT    9       0.0      0.66944     3  ; e.g. CA-CB*CG*HG
+;DUM_HC  DUM_CT  DUM_CT  DUM_CT    9       0.0      0.66944     3  ; e.g. *CD1*CG*CD2*HD21
+;    H1      CT      CT  DUM_OH    9       0.0      1.04600     1  ; e.g. HA-CA-CB*OH
+;DUM_HO  DUM_OH      CT      CT    9       0.0      0.66944     3  ; e.g. CA-CB*OH*HO
+;DUM_HO  DUM_OH      CT      CT    9       0.0      1.04600     1  
+;    HC      CT  DUM_OH  DUM_HO    9       0.0      0.69733     3  ; e.g. HB1-CB*OH*HO
