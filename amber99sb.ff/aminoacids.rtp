@@ -3582,17 +3582,17 @@
     CB   HB1           0.10900   284512.0 ; CT-HC
     CB   HB2           0.10900   284512.0 ; CT-HC
     CB   HB3           0.10900   284512.0 ; CT-HC
-    CB   CG2
-    CB   CG1
-   CG2  HG21
-   CG2  HG22
-   CG2  HG23
-   CG1  HG11
-   CG1  HG12
-   CG1    CD
-    CD   HD1
-    CD   HD2
-    CD   HD3
+    CB   CG2           0.15260   259408.0 ; CT-CT
+    CB   CG1           0.15260   259408.0 ; CT-CT
+   CG2  HG21           0.10900   284512.0 ; CT-HC
+   CG2  HG22           0.10900   284512.0 ; CT-HC
+   CG2  HG23           0.10900   284512.0 ; CT-HC
+   CG1  HG11           0.10900   284512.0 ; CT-HC
+   CG1  HG12           0.10900   284512.0 ; CT-HC
+   CG1    CD           0.15260   259408.0 ; CT-CT
+    CD   HD1           0.10900   284512.0 ; CT-HC
+    CD   HD2           0.10900   284512.0 ; CT-HC
+    CD   HD3           0.10900   284512.0 ; CT-HC
      C     O
     -C     N
  [ exclusions ]
@@ -3619,10 +3619,32 @@
    HB3   HD2
    HB3   HD3
  [ angles ]
-   HB2    CB   CG2   0   0   
-   HB2    CB   CG1   0   0   
-   HB3    CB   CG2   0   0   
-   HB3    CB   CG1   0   0   
+   HB2    CB   CG2         0          0   
+   HB2    CB   CG1         0          0   
+   HB3    CB   CG2         0          0   
+   HB3    CB   CG1         0          0   
+   HB1    CB    CA   109.500    418.400    ; HC-CT-CT
+   HB2    CB    CA   109.500    418.400    ; HC-CT-CT
+   HB3    CB    CA   109.500    418.400    ; HC-CT-CT
+   HB1    CB   CG1   109.500    418.400    ; HC-CT-CT
+   HB1    CB   CG2   109.500    418.400    ; HC-CT-CT
+    CB   CG2  HG21   109.500    418.400    ; HC-CT-CT
+    CB   CG2  HG22   109.500    418.400    ; HC-CT-CT
+    CB   CG2  HG23   109.500    418.400    ; HC-CT-CT
+    CB   CG1  HG11   109.500    418.400    ; HC-CT-CT
+    CB   CG1  HG12   109.500    418.400    ; HC-CT-CT
+   CG1    CD   HD1   109.500    418.400    ; HC-CT-CT
+   CG1    CD   HD2   109.500    418.400    ; HC-CT-CT
+   CG1    CD   HD3   109.500    418.400    ; HC-CT-CT
+    CD   CG1  HG11   109.500    418.400    ; HC-CT-CT
+    CD   CG1  HG12   109.500    418.400    ; HC-CT-CT
+   HB1    CB   HB2   109.500    292.880    ; HC-CT-HC
+   HB1    CB   HB3   109.500    292.880    ; HC-CT-HC
+   HB2    CB   HB3   109.500    292.880    ; HC-CT-HC
+    CA    CB   CG1   109.500    334.720    ; CT-CT-CT
+    CA    CB   CG2   109.500    334.720    ; CT-CT-CT
+    CB   CG1    CD   109.500    334.720    ; CT-CT-CT
+   CG1    CB   CG2   109.500    334.720    ; CT-CT-CT
  [ dihedrals ]
    HB2    CB   CG2   HG21   0   0   0 
    HB2    CB   CG2   HG22   0   0   0
@@ -3636,6 +3658,33 @@
    HB3    CB   CG1   HG11   0   0   0
    HB3    CB   CG1   HG12   0   0   0
    HB3    CB   CG1     CD   0   0   0
+   HB1    CB    CA      N   0.0      0.65084   3 ;  X-CT-CT-X
+   HB1    CB    CA     HA   0.0      0.65084   3 ;  X-CT-CT-X
+   HB1    CB    CA      C   0.0      0.65084   3 ;  X-CT-CT-X
+   HB2    CB    CA      N   0.0      0.65084   3 ;  X-CT-CT-X
+   HB2    CB    CA     HA   0.0      0.65084   3 ;  X-CT-CT-X
+   HB2    CB    CA      C   0.0      0.65084   3 ;  X-CT-CT-X
+   HB3    CB    CA      N   0.0      0.65084   3 ;  X-CT-CT-X
+   HB3    CB    CA     HA   0.0      0.65084   3 ;  X-CT-CT-X
+   HB3    CB    CA      C   0.0      0.65084   3 ;  X-CT-CT-X
+   CG1    CB    CA      N   0.0      0.65084   3 ;  X-CT-CT-X
+   CG1    CB    CA     HA   0.0      0.65084   3 ;  X-CT-CT-X
+   CG1    CB    CA      C   0.0      0.65084   3 ;  X-CT-CT-X
+   CG2    CB    CA      N   0.0      0.65084   3 ;  X-CT-CT-X
+   CG2    CB    CA     HA   0.0      0.65084   3 ;  X-CT-CT-X
+   CG2    CB    CA      C   0.0      0.65084   3 ;  ""
+   HB1    CB   CG2   HG21   0.0      0.62760   3 ;  HC-CT-CT-HC
+   HB1    CB   CG2   HG22   0.0      0.62760   3 ;  HC-CT-CT-HC
+   HB1    CB   CG2   HG23   0.0      0.62760   3 ;  HC-CT-CT-HC
+   HB1    CB   CG1   HG11   0.0      0.62760   3 ;  HC-CT-CT-HC
+   HB1    CB   CG1   HG12   0.0      0.62760   3 ;  ""
+   HB1    CB   CG1     CD   0.0      0.66944   3 ;  HC-CT-CT-CT
+    CB   CG1    CD    HD1   0.0      0.66944   3 ;  HC-CT-CT-CT
+    CB   CG1    CD    HD2   0.0      0.66944   3 ;  HC-CT-CT-CT
+    CB   CG1    CD    HD3   0.0      0.66944   3 ;  HC-CT-CT-CT
+   CG1    CB   CG2   HG21   0.0      0.66944   3 ;  HC-CT-CT-CT
+   CG1    CB   CG2   HG22   0.0      0.66944   3 ;  HC-CT-CT-CT
+   CG1    CB   CG2   HG23   0.0      0.66944   3 ;  HC-CT-CT-CT
  [ impropers ]
     -C    CA     N     H
     CA    +N     C     O
