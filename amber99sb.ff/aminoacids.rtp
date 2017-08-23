@@ -3772,6 +3772,220 @@
     -C    CA     N     H
     CA    +N     C     O
 
+; Hybrid Val-Ala residue
+[ V2A ]
+ [ atoms ]
+     N    N           -0.41570     1
+     H    H            0.27190     2
+    CA    CT          -0.08750     3
+    HA    H1           0.09690     4
+    CB    CT           0.29850     5
+   HB1    HC          -0.02970     6
+   HB2    HC           0.00000     7
+   HB3    HC           0.00000     8
+   CG1    CT          -0.31920     9
+  HG11    HC           0.07910    10
+  HG12    HC           0.07910    11
+  HG13    HC           0.07910    12
+   CG2    CT          -0.31920    13
+  HG21    HC           0.07910    14
+  HG22    HC           0.07910    15
+  HG23    HC           0.07910    16
+     C    C            0.59730    17
+     O    O           -0.56790    18
+ [ bonds ]
+     N     H
+     N    CA
+    CA    HA
+    CA    CB
+    CA     C
+    CB   HB1      0.10900   284512.0  ; CT-HC
+    CB   HB2      0.10900   284512.0  ; CT-HC
+    CB   HB3      0.10900   284512.0  ; CT-HC
+    CB   CG1      0.15260   259408.0  ; CT-CT
+    CB   CG2      0.15260   259408.0  ; CT-CT
+   CG1  HG11      0.10900   284512.0  ; CT-HC
+   CG1  HG12      0.10900   284512.0  ; CT-HC
+   CG1  HG13      0.10900   284512.0  ; CT-HC
+   CG2  HG21      0.10900   284512.0  ; CT-HC
+   CG2  HG22      0.10900   284512.0  ; CT-HC
+   CG2  HG23      0.10900   284512.0  ; CT-HC
+     C     O
+    -C     N
+ [ angles ]
+    HB2   CB   CG1   0.0   0.0   
+    HB3   CB   CG1   0.0   0.0
+    HB2   CB   CG2   0.0   0.0   
+    HB3   CB   CG2   0.0   0.0
+    HB1   CB   HB2   109.500    292.880 ; HC-CT-HC
+    HB1   CB   HB3   109.500    292.880 ; HC-CT-HC
+    HB2   CB   HB3   109.500    292.880 ; HC-CT-HC
+    HB1   CB   CG1   109.500    418.400 ; HC-CT-CT
+    HB1   CB   CG2   109.500    418.400 ; HC-CT-CT
+    HB1   CB   CA    109.500    418.400 ; HC-CT-CT
+    HB2   CB   CA    109.500    418.400 ; HC-CT-CT
+    HB3   CB   CA    109.500    418.400 ; HC-CT-CT
+    CA    CB   CG1   109.500    334.720 ; CT-CT-CT
+    CA    CB   CG2   109.500    334.720 ; CT-CT-CT
+    CB    CG1  HG11  109.500    418.400 ; HC-CT-CT
+    CB    CG1  HG12  109.500    418.400 ; HC-CT-CT
+    CB    CG1  HG13  109.500    418.400 ; HC-CT-CT
+    CB    CG2  HG21  109.500    418.400 ; HC-CT-CT
+    CB    CG2  HG22  109.500    418.400 ; HC-CT-CT
+    CB    CG2  HG23  109.500    418.400 ; HC-CT-CT
+    CG1   CB   CG2   109.500    334.720 ; CT-CT-CT
+    HG11  CG1  HG12  109.500    292.880 ; HC-CT-HC
+    HG11  CG1  HG13  109.500    292.880 ; HC-CT-HC
+    HG12  CG1  HG13  109.500    292.880 ; HC-CT-HC
+    CG2   CB   CG2   109.500    334.720 ; CT-CT-CT
+    HG21  CG2  HG22  109.500    292.880 ; HC-CT-HC
+    HG21  CG2  HG23  109.500    292.880 ; HC-CT-HC
+    HG22  CG2  HG23  109.500    292.880 ; HC-CT-HC
+ [ dihedrals ]
+    HB2   CB   CG1  HG11  0   0  0
+    HB2   CB   CG1  HG12  0   0  0
+    HB2   CB   CG1  HG13  0   0  0
+    HB2   CB   CG2  HG21  0   0  0
+    HB2   CB   CG2  HG22  0   0  0
+    HB2   CB   CG2  HG23  0   0  0
+    HB3   CB   CG1  HG11  0   0  0
+    HB3   CB   CG1  HG12  0   0  0
+    HB3   CB   CG1  HG13  0   0  0
+    HB3   CB   CG2  HG21  0   0  0
+    HB3   CB   CG2  HG22  0   0  0
+    HB3   CB   CG2  HG23  0   0  0
+    HB1   CB   CG1  HG11  0.0      0.62760   3 ;  HC-CT-CT-HC
+    HB1   CB   CG1  HG12  0.0      0.62760   3 ; ""
+    HB1   CB   CG1  HG13  0.0      0.62760   3 ; ""
+    HB1   CB   CG2  HG21  0.0      0.62760   3 ; ""
+    HB1   CB   CG2  HG22  0.0      0.62760   3 ; ""
+    HB1   CB   CG2  HG23  0.0      0.62760   3 ; ""
+    HB1   CB   CA   HA    0.0      0.65084   3 ; X-CT-CT-X
+    HB1   CB   CA   N     0.0      0.65084   3 ; ""
+    HB1   CB   CA   C     0.0      0.65084   3 ; ""
+    HB2   CB   CA   HA    0.0      0.65084   3 ; X-CT-CT-X
+    HB2   CB   CA   N     0.0      0.65084   3 ; ""
+    HB2   CB   CA   C     0.0      0.65084   3 ; ""
+    HB3   CB   CA   HA    0.0      0.65084   3 ; X-CT-CT-X
+    HB3   CB   CA   N     0.0      0.65084   3 ; ""
+    HB3   CB   CA   C     0.0      0.65084   3 ; ""
+    CG1   CB   CA   HA    0.0      0.65084   3 ;  X-CT-CT-X
+    CG1   CB   CA   N     0.0      0.65084   3 ;  ""
+    CG1   CB   CA   C     0.0      0.65084   3 ;  ""
+    CG2   CB   CA   HA    0.0      0.65084   3 ;  X-CT-CT-X
+    CG2   CB   CA   N     0.0      0.65084   3 ;  ""
+    CG2   CB   CA   C     0.0      0.65084   3 ;  ""
+    CG1   CB   CG2  HG21  0.0      0.66944   3 ;  HC-CT-CT-CT
+    CG1   CB   CG2  HG22  0.0      0.66944   3 ;  ""
+    CG1   CB   CG2  HG23  0.0      0.66944   3 ;  ""
+    CG2   CB   CG1  HG11  0.0      0.66944   3 ;  HC-CT-CT-CT
+    CG2   CB   CG1  HG12  0.0      0.66944   3 ;  ""
+    CG2   CB   CG1  HG13  0.0      0.66944   3 ;  ""
+     CA   CB   CG1  HG11  0.0      0.66944   3 ;  HC-CT-CT-CT
+     CA   CB   CG1  HG12  0.0      0.66944   3 ;  ""
+     CA   CB   CG1  HG13  0.0      0.66944   3 ;  ""
+     CA   CB   CG2  HG21  0.0      0.66944   3 ;  ""
+     CA   CB   CG2  HG22  0.0      0.66944   3 ;  ""
+     CA   CB   CG2  HG23  0.0      0.66944   3 ;  ""
+ [ exclusions ]
+    HB2   CG1
+    HB2   HG11
+    HB2   HG12
+    HB2   HG13
+    HB2   CG2
+    HB2   HG21
+    HB2   HG22
+    HB2   HG23
+    HB3   CG1
+    HB3   HG11
+    HB3   HG12
+    HB3   HG13
+    HB3   CG2
+    HB3   HG21
+    HB3   HG22
+    HB3   HG23
+ [ impropers ]
+    -C    CA     N     H
+    CA    +N     C     O
+
+[ V2At ]
+ [ atoms ]
+     N    N           -0.41570     1
+     H    H            0.27190     2
+    CA    CT          -0.08750     3
+    HA    H1           0.09690     4
+    CB    CT           0.29850     5
+   HB1    HC          -0.02970     6
+   HB2    HC           0.00000     7
+   HB3    HC           0.00000     8
+   CG1    CT          -0.31920     9
+  HG11    HC           0.07910    10
+  HG12    HC           0.07910    11
+  HG13    HC           0.07910    12
+   CG2    CT          -0.31920    13
+  HG21    HC           0.07910    14
+  HG22    HC           0.07910    15
+  HG23    HC           0.07910    16
+     C    C            0.59730    17
+     O    O           -0.56790    18
+ [ bonds ]
+     N     H
+     N    CA
+    CA    HA
+    CA    CB
+    CA     C
+    CB   HB1
+    CB   HB2
+    CB   HB3
+    CB   CG1
+    CB   CG2
+   CG1  HG11
+   CG1  HG12
+   CG1  HG13
+   CG2  HG21
+   CG2  HG22
+   CG2  HG23
+     C     O
+    -C     N
+ [ angles ]
+    HB2   CB   CG1   0.0   0.0   
+    HB3   CB   CG1   0.0   0.0
+    HB2   CB   CG2   0.0   0.0   
+    HB3   CB   CG2   0.0   0.0
+ [ dihedrals ]
+    HB2   CB   CG1  HG11  0   0  0
+    HB2   CB   CG1  HG12  0   0  0
+    HB2   CB   CG1  HG13  0   0  0
+    HB2   CB   CG2  HG21  0   0  0
+    HB2   CB   CG2  HG22  0   0  0
+    HB2   CB   CG2  HG23  0   0  0
+    HB3   CB   CG1  HG11  0   0  0
+    HB3   CB   CG1  HG12  0   0  0
+    HB3   CB   CG1  HG13  0   0  0
+    HB3   CB   CG2  HG21  0   0  0
+    HB3   CB   CG2  HG22  0   0  0
+    HB3   CB   CG2  HG23  0   0  0
+ [ exclusions ]
+    HB2   CG1
+    HB2   HG11
+    HB2   HG12
+    HB2   HG13
+    HB2   CG2
+    HB2   HG21
+    HB2   HG22
+    HB2   HG23
+    HB3   CG1
+    HB3   HG11
+    HB3   HG12
+    HB3   HG13
+    HB3   CG2
+    HB3   HG21
+    HB3   HG22
+    HB3   HG23
+ [ impropers ]
+    -C    CA     N     H
+    CA    +N     C     O
+
 ; Added by NRego
 ; Hybrid LEU-ALA residue for alchemical transformations
 ; test for default params
