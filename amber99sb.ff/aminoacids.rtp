@@ -3649,8 +3649,8 @@
    HB1    CB   CG1   CD2    0.0      0.66944     3
    HB2    CB   CG1   CD1    0.0      0.66944     3
    HB2    CB   CG1   CD2    0.0      0.66944     3
-   HB1    CB   CG1    HG    0.0      0.62760     3 ; HC-CT-CT-HC
-   HB2    CB   CG1    HG    0.0      0.62760     3 ; HC-CT-CT-HC
+   HB1    CB   CG1  HG11    0.0      0.62760     3 ; HC-CT-CT-HC
+   HB2    CB   CG1  HG11    0.0      0.62760     3 ; HC-CT-CT-HC
      N    CA    CB   CG1    0.0      0.65084     3 ;  X-CT-CT-X
     HA    CA    CB   CG1    0.0      0.65084     3 ;  X-CT-CT-X
      C    CA    CB   CG1    0.0      0.65084     3 ;  X-CT-CT-X
@@ -3667,12 +3667,12 @@
     CB   CG1   CD2  HD21    0.0      0.66944     3
     CB   CG1   CD2  HD22    0.0      0.66944     3
     CB   CG1   CD2  HD23    0.0      0.66944     3
-    HG   CG1   CD1  HD11    0.0      0.62760     3 ; HC-CT-CT-HC
-    HG   CG1   CD1  HD12    0.0      0.62760     3 ; HC-CT-CT-HC
-    HG   CG1   CD1  HD13    0.0      0.62760     3 ; HC-CT-CT-HC
-    HG   CG1   CD2  HD21    0.0      0.62760     3 ; HC-CT-CT-HC
-    HG   CG1   CD2  HD22    0.0      0.62760     3 ; HC-CT-CT-HC
-    HG   CG1   CD2  HD23    0.0      0.62760     3 ; HC-CT-CT-HC
+  HG11   CG1   CD1  HD11    0.0      0.62760     3 ; HC-CT-CT-HC
+  HG11   CG1   CD1  HD12    0.0      0.62760     3 ; HC-CT-CT-HC
+  HG11   CG1   CD1  HD13    0.0      0.62760     3 ; HC-CT-CT-HC
+  HG11   CG1   CD2  HD21    0.0      0.62760     3 ; HC-CT-CT-HC
+  HG11   CG1   CD2  HD22    0.0      0.62760     3 ; HC-CT-CT-HC
+  HG11   CG1   CD2  HD23    0.0      0.62760     3 ; HC-CT-CT-HC
    CD1   CG1   CD2  HD21    0.0      0.66944     3 ; HC-CT-CT-CT
    CD1   CG1   CD2  HD22    0.0      0.66944     3 ; HC-CT-CT-CT
    CD1   CG1   CD2  HD23    0.0      0.66944     3 ; HC-CT-CT-CT
