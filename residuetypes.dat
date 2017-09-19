@@ -203,6 +203,7 @@ OH	Ion
 Cal	Ion
 IB+	Ion
 L2A     Protein
+L2S     Protein
 S2A     Protein
 I2A     Protein
 V2A     Protein
@@ -210,3 +211,4 @@ L2At    Protein
 S2At    Protein
 I2At    Protein
 V2At    Protein
+L2St    Protein

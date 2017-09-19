@@ -537,7 +537,15 @@ S2A 5
 1   5   HA  CA  N   CB  C   
 2   6   HB  CB  CA  OG  
 1   5   HB3 CB  CA  HB1 HB2
-1   2   HG  OG  CB  CA  
+1   2   HG  OG  CB  CA 
+L2S 7
+1   1   H    N   -C  CA  
+1   5   HA   CA  N   CB  C   
+2   6   HB   CB  CA  CG1
+1   5   HG11 CG1 CB  CD1 CD2 
+1   2   HG21 OG2 CB  CA
+3   4   HD1  CD1 CG1 CB  
+3   4   HD2  CD2 CG1 CB
 I2A 7
 1   1   H   N   -C  CA  
 1   5   HA  CA  N   CB  C   
@@ -568,3 +576,11 @@ V2At 6
 1   5   HB3 CB  CA  HB1 HB2
 3   4   HG1 CG1 CB  CA  
 3   4   HG2 CG2 CB  CA 
+L2St 7
+1   1   H    N   -C  CA  
+1   5   HA   CA  N   CB  C   
+2   6   HB   CB  CA  CG1
+1   5   HG11 CG1 CB  CD1 CD2 
+1   2   HG21 OG2 CB  CA
+3   4   HD1  CD1 CG1 CB  
+3   4   HD2  CD2 CG1 CB  

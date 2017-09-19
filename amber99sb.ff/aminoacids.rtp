@@ -24,6 +24,7 @@
 
 ; now: water, ions, urea, terminal caps, AA's and terminal AA's
 
+
 ; tip3p
 [ HOH ]
  [ atoms ]
@@ -3548,6 +3549,151 @@
     -C    CA     N     H
     CA    +N     C     O
 
+; Added by NRego
+; Hybrid LEU-SER residue for one-step alchemical transformations
+[ L2S ]
+ [ atoms ]
+     N    N           -0.41570     1
+     H    H            0.27190     2
+    CA    CT          -0.05180     3
+    HA    H1           0.09220     4
+    CB    CT          -0.11020     5
+   HB1    HC           0.04570     6
+   HB2    HC           0.04570     7 
+   CG1    CT           0.35310     9
+  HG11    HC          -0.03610    10
+   CD1    CT          -0.41210    11
+  HD11    HC           0.10000    12
+  HD12    HC           0.10000    13
+  HD13    HC           0.10000    14
+   CD2    CT          -0.41210    15
+  HD21    HC           0.10000    16
+  HD22    HC           0.10000    17
+  HD23    HC           0.10000    18
+   OG2    DUM_OH           0.0    19
+  HG21    DUM_HO           0.0    20
+     C    C            0.59730    21
+     O    O           -0.56790    22
+ [ bonds ]
+     N     H
+     N    CA
+    CA    HA
+    CA    CB
+    CA     C
+    CB   HB1
+    CB   HB2
+    CB   CG1           0.15260   259408.0 ; CT-CT
+   CG1  HG11           0.10900   284512.0 ; CT-HC
+   CG1   CD1           0.15260   259408.0 ; CT-CT
+   CG1   CD2           0.15260   259408.0
+   CD1  HD11           0.10900   284512.0 ; CT-HC
+   CD1  HD12           0.10900   284512.0
+   CD1  HD13           0.10900   284512.0
+   CD2  HD21           0.10900   284512.0
+   CD2  HD22           0.10900   284512.0
+   CD2  HD23           0.10900   284512.0
+    CB   OG2           0.14100   267776.0  ; CT-OH
+   OG2  HG21           0.09600   462750.4  ; HO-OH
+     C     O
+    -C     N
+ [ exclusions ] ; exclude all hybrid atoms between L and S
+   HG21   CG1
+   HG21   CD1
+   HG21   CD2
+   HG21   HG11
+   HG21   HD11
+   HG21   HD12
+   HG21   HD13
+   HG21   HD21
+   HG21   HD22
+   HG21   HD23
+   OG2   CG1
+   OG2   CD1
+   OG2   CD2
+   OG2   HG11
+   OG2   HD11
+   OG2   HD12
+   OG2   HD13
+   OG2   HD21
+   OG2   HD22
+   OG2   HD23
+ [ angles ]
+    HB1    CB  CG1        109.500    418.400
+    HB2    CB  CG1        109.500    418.400
+     CA    CB  CG1        109.500    334.720
+     CB   CG1 HG11        109.500    418.400
+     CB   CG1  CD1        109.500    334.720
+     CB   CG1  CD2        109.500    334.720
+   HG11   CG1  CD1        109.500    418.400    ; HC-CT-CT
+   HG11   CG1  CD2        109.500    418.400
+    CD1   CG1  CD2        109.500    334.720    ; CT-CT-CT
+    CG1   CD1 HD11        109.500    418.400    ; HC-CT-CT
+    CG1   CD1 HD12        109.500    418.400    ; HC-CT-CT
+    CG1   CD1 HD13        109.500    418.400    ; HC-CT-CT
+    CG1   CD2 HD21        109.500    418.400    ; HC-CT-CT
+    CG1   CD2 HD22        109.500    418.400    ; HC-CT-CT
+    CG1   CD2 HD23        109.500    418.400    ; HC-CT-CT
+   HD11   CD1 HD12        109.500    292.880    ; HC-CT-HC
+   HD11   CD1 HD13        109.500    292.880    ; HC-CT-HC
+   HD12   CD1 HD13        109.500    292.880    ; HC-CT-HC
+   HD21   CD2 HD22        109.500    292.880    ; HC-CT-HC
+   HD21   CD2 HD23        109.500    292.880    ; HC-CT-HC
+   HD22   CD2 HD23        109.500    292.880    ; HC-CT-HC
+    OG2    CB  CG1          0.000      0.000    ; non-physical
+    OG2    CB  HB1        109.500    418.400    ; OH-CT-H1
+    OG2    CB  HB2        109.500    418.400    ; ""
+    OG2    CB   CA        109.500    418.400    ; CT-CT-OH
+    HG21  OG2   CB        108.500    460.240    ; CT-OH-HO
+ [ dihedrals ]
+   HB1    CB   CG1   CD1    0.0      0.66944     3 ; HC-CT-CT-CT
+   HB1    CB   CG1   CD2    0.0      0.66944     3
+   HB2    CB   CG1   CD1    0.0      0.66944     3
+   HB2    CB   CG1   CD2    0.0      0.66944     3
+   HB1    CB   CG1    HG    0.0      0.62760     3 ; HC-CT-CT-HC
+   HB2    CB   CG1    HG    0.0      0.62760     3 ; HC-CT-CT-HC
+     N    CA    CB   CG1    0.0      0.65084     3 ;  X-CT-CT-X
+    HA    CA    CB   CG1    0.0      0.65084     3 ;  X-CT-CT-X
+     C    CA    CB   CG1    0.0      0.65084     3 ;  X-CT-CT-X
+    CA    CB   CG1  HG11    0.0      0.66944     3 ;  CT-CT-CT-HC
+    CA    CB   CG1   CD1    0.0      0.75312     3 ;  CT-CT-CT-CT
+    CA    CB   CG1   CD1  180.0      1.04600     2
+    CA    CB   CG1   CD1  180.0      0.83680     1
+    CA    CB   CG1   CD2    0.0      0.75312     3 ; CT-CT-CT-CT
+    CA    CB   CG1   CD2  180.0      1.04600     2
+    CA    CB   CG1   CD2  180.0      0.83680     1
+    CB   CG1   CD1  HD11    0.0      0.66944     3 ; HC-CT-CT-CT
+    CB   CG1   CD1  HD12    0.0      0.66944     3
+    CB   CG1   CD1  HD13    0.0      0.66944     3
+    CB   CG1   CD2  HD21    0.0      0.66944     3
+    CB   CG1   CD2  HD22    0.0      0.66944     3
+    CB   CG1   CD2  HD23    0.0      0.66944     3
+    HG   CG1   CD1  HD11    0.0      0.62760     3 ; HC-CT-CT-HC
+    HG   CG1   CD1  HD12    0.0      0.62760     3 ; HC-CT-CT-HC
+    HG   CG1   CD1  HD13    0.0      0.62760     3 ; HC-CT-CT-HC
+    HG   CG1   CD2  HD21    0.0      0.62760     3 ; HC-CT-CT-HC
+    HG   CG1   CD2  HD22    0.0      0.62760     3 ; HC-CT-CT-HC
+    HG   CG1   CD2  HD23    0.0      0.62760     3 ; HC-CT-CT-HC
+   CD1   CG1   CD2  HD21    0.0      0.66944     3 ; HC-CT-CT-CT
+   CD1   CG1   CD2  HD22    0.0      0.66944     3 ; HC-CT-CT-CT
+   CD1   CG1   CD2  HD23    0.0      0.66944     3 ; HC-CT-CT-CT
+   CD2   CG1   CD1  HD11    0.0      0.66944     3 ; HC-CT-CT-CT
+   CD2   CG1   CD1  HD12    0.0      0.66944     3 ; HC-CT-CT-CT
+   CD2   CG1   CD1  HD13    0.0      0.66944     3 ; HC-CT-CT-CT
+   OG2    CB   CG1  HG11    0.0          0.0     0 ; non-phys
+   OG2    CB   CG1   CD1    0.0          0.0     0 ; ""
+   OG2    CB   CG1   CD2    0.0          0.0     0 ; ""
+  HG21    OG2   CB   CG1    0.0          0.0     0 ; ""
+  HG21    OG2   CB   HB1    0.0      0.69733     3  ; X-OH-CT-X ?
+  HG21    OG2   CB   HB2    0.0      0.69733     3
+  HG21    OG2   CB    CA    0.0      0.66944     3  ; HO-OH-CT-CT
+  HG21    OG2   CB    CA    0.0      1.04600     1
+   OG2     CB   CA    HA    0.0      1.04600     1  ; H1-CT-CT-OH
+   OG2     CB   CA     N    0.0      0.65084     3  ; X-CT-CT-X
+   OG2     CB   CA     C    0.0      0.65084     3  ; X-CT-CT-X
+ [ impropers ]
+    -C    CA     N     H
+    CA    +N     C     O
+
 ; ADDED by nrego
 ;  7/20/17
 [ I2A ]
@@ -4141,6 +4287,88 @@
    HB3    CB   CG1   HG11   0   0   0
    HB3    CB   CG1   HG12   0   0   0
    HB3    CB   CG1     CD   0   0   0
+ [ impropers ]
+    -C    CA     N     H
+    CA    +N     C     O
+
+
+; Added by NRego
+; Hybrid LEU-SER residue for one-step alchemical transformations
+[ L2St ]
+ [ atoms ]
+     N    N           -0.41570     1
+     H    H            0.27190     2
+    CA    CT          -0.05180     3
+    HA    H1           0.09220     4
+    CB    CT          -0.11020     5
+   HB1    HC           0.04570     6
+   HB2    HC           0.04570     7
+   CG1    CT           0.35310     9
+  HG11    HC          -0.03610    10
+   CD1    CT          -0.41210    11
+  HD11    HC           0.10000    12
+  HD12    HC           0.10000    13
+  HD13    HC           0.10000    14
+   CD2    CT          -0.41210    15
+  HD21    HC           0.10000    16
+  HD22    HC           0.10000    17
+  HD23    HC           0.10000    18
+   OG2    DUM_OH           0.0    19
+  HG21    DUM_HO           0.0    20
+     C    C            0.59730    21
+     O    O           -0.56790    22
+ [ bonds ]
+     N     H
+     N    CA
+    CA    HA
+    CA    CB
+    CA     C
+    CB   HB1
+    CB   HB2
+    CB   CG1
+   CG1  HG11
+   CG1   CD1
+   CG1   CD2
+   CD1  HD11
+   CD1  HD12
+   CD1  HD13
+   CD2  HD21
+   CD2  HD22
+   CD2  HD23
+    CB   OG2
+   OG2  HG21
+     C     O
+    -C     N
+ [ exclusions ] ; exclude all hybrid atoms between L and S
+   HG21   CG1
+   HG21   CD1
+   HG21   CD2
+   HG21   HG11
+   HG21   HD11
+   HG21   HD12
+   HG21   HD13
+   HG21   HD21
+   HG21   HD22
+   HG21   HD23
+   OG2   CG1
+   OG2   CD1
+   OG2   CD2
+   OG2   HG11
+   OG2   HD11
+   OG2   HD12
+   OG2   HD13
+   OG2   HD21
+   OG2   HD22
+   OG2   HD23
+ [ angles ]
+    OG2   CB   CG1          0.000      0.000    ; non-physical
+    OG2   CB   HB1   109.500    418.400 ; OH-CT-H1
+    OG2   CB   HB2   109.500    418.400 ; ""
+ [ dihedrals ]
+   OG2    CB   CG1  HG11    0.0          0.0     0 ; non-phys
+   OG2    CB   CG1   CD1    0.0          0.0     0 ; ""
+   OG2    CB   CG1   CD2    0.0          0.0     0 ; ""
+  HG21    OG2   CB   CG1    0.0          0.0     0 ; ""
  [ impropers ]
     -C    CA     N     H
     CA    +N     C     O
