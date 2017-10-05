@@ -77,3 +77,4 @@ MCH3               0.00000      ; Dummy mass in rigid tetrahedral CH3 group
 MNH3               0.00000      ; Dummy mass in rigid tetrahedral NH3 group
 WX                16.04300      ; Nrego - added wall atom type
 DUM                0.00000      ; Nrego - dummy (to be frozen)
+VS                 0.00000      ; Nrego - generic virtual site
