@@ -3433,7 +3433,7 @@
     CB    CT          -0.11020     5
    HB1    HC           0.04570     6
    HB2    HC           0.04570     7
-   HB3    HC           0.00000     8  
+   HB3    DUM_HC           0.0     8  
     CG    CT           0.35310     9
     HG    HC          -0.03610    10
    CD1    CT          -0.41210    11
@@ -3704,8 +3704,8 @@
     HA    H1           0.08690     4
     CB    CT           0.13030     5
    HB1    HC           0.01870     6
-   HB2    HC               0.0     7
-   HB3    HC               0.0     8
+   HB2    DUM_HC           0.0     7
+   HB3    DUM_HC           0.0     8
    CG2    CT          -0.32040     9
   HG21    HC           0.08820    10
   HG22    HC           0.08820    11
@@ -3872,7 +3872,7 @@
     CB    CT           0.21170     5
    HB1    H1           0.03520     6
    HB2    H1           0.03520     7
-   HB3    HC           0.00000     8
+   HB3    DUM_HC       0.00000     8
     OG    OH          -0.65460     9
     HG    HO           0.42750    10
      C    C            0.59730    11
@@ -3927,8 +3927,8 @@
     HA    H1           0.09690     4
     CB    CT           0.29850     5
    HB1    HC          -0.02970     6
-   HB2    HC           0.00000     7
-   HB3    HC           0.00000     8
+   HB2    DUM_HC       0.00000     7
+   HB3    DUM_HC       0.00000     8
    CG1    CT          -0.31920     9
   HG11    HC           0.07910    10
   HG12    HC           0.07910    11
@@ -4062,8 +4062,8 @@
     HA    H1           0.09690     4
     CB    CT           0.29850     5
    HB1    HC          -0.02970     6
-   HB2    HC           0.00000     7
-   HB3    HC           0.00000     8
+   HB2    DUM_HC       0.00000     7
+   HB3    DUM_HC       0.00000     8
    CG1    CT          -0.31920     9
   HG11    HC           0.07910    10
   HG12    HC           0.07910    11
@@ -4144,7 +4144,7 @@
     CB    CT          -0.11020     5
    HB1    HC           0.04570     6
    HB2    HC           0.04570     7
-   HB3    HC           0.00000     8  
+   HB3    DUM_HC       0.00000     8  
     CG    CT           0.35310     9
     HG    HC          -0.03610    10
    CD1    CT          -0.41210    11
@@ -4195,6 +4195,48 @@
    HB3  HD21
    HB3  HD22
    HB3  HD23
+ [ impropers ]
+    -C    CA     N     H
+    CA    +N     C     O
+
+; ADDED by Nrego
+; Serine-Alanine hybrid residue
+[ S2At ]
+ [ atoms ]
+     N    N           -0.41570     1
+     H    H            0.27190     2
+    CA    CT          -0.02490     3
+    HA    H1           0.08430     4
+    CB    CT           0.21170     5
+   HB1    H1           0.03520     6
+   HB2    H1           0.03520     7
+   HB3    HC           0.00000     8
+    OG    OH          -0.65460     9
+    HG    HO           0.42750    10
+     C    C            0.59730    11
+     O    O           -0.56790    12
+ [ bonds ]
+     N     H
+     N    CA
+    CA    HA
+    CA    CB
+    CA     C
+    CB   HB1
+    CB   HB2
+    CB   HB3           
+    CB    OG           
+    OG    HG           
+     C     O
+    -C     N
+ [ exclusions ]
+   HB3    OG
+   HB3    HG
+ [ angles ]
+    OG   CB   HB3     0    0   ; non-physical
+   HB3   CB   HB1   109.500    292.880 ; HC-CT-HC or H1-CT-H1
+   HB3   CB   HB2   109.500    292.880
+ [ dihedrals ]
+    HG   OG   CB  HB3    0   0   0  ; non-physical dihed
  [ impropers ]
     -C    CA     N     H
     CA    +N     C     O
