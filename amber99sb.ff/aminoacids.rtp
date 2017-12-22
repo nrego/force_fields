@@ -3694,6 +3694,89 @@
     -C    CA     N     H
     CA    +N     C     O
 
+[ V2S ]
+ [ atoms ]
+     N    N           -0.41570     1
+     H    H            0.27190     2
+    CA    CT          -0.08750     3
+    HA    H1           0.09690     4
+    CB    CT           0.29850     5
+   HB1    HC          -0.02970     6
+   HB2    DUM_HC           0.0     7
+   CG1    CT          -0.31920     8
+  HG11    HC           0.07910     9
+  HG12    HC           0.07910    10
+  HG13    HC           0.07910    11
+   CG2    CT          -0.31920    12
+  HG21    HC           0.07910    13
+  HG22    HC           0.07910    14
+  HG23    HC           0.07910    15
+   OG3    DUM_OH           0.0    16
+  HG31    DUM_HO           0.0    17
+     C    C            0.59730    18
+     O    O           -0.56790    19
+ [ bonds ]
+     N     H
+     N    CA
+    CA    HA
+    CA    CB
+    CA     C
+    CB   HB1     0.10900   284512.0 ; CT-[H1 or HC]
+    CB   HB2     0.10900   284512.0 ; CT-H1
+    CB   CG1     0.15260   259408.0 ; CT-CT
+    CB   CG2     0.15260   259408.0 ; CT-CT
+    CB   OG3     0.14100   267776.0 ; CT-OH
+   OG3  HG31     0.09600   462750.4 ; OH-HO
+   CG1  HG11     0.10900   284512.0 ; HC-CT
+   CG1  HG12     0.10900   284512.0 ; ""
+   CG1  HG13     0.10900   284512.0 ; ""
+   CG2  HG21     0.10900   284512.0 ; ""
+   CG2  HG22     0.10900   284512.0 ; ""
+   CG2  HG23     0.10900   284512.0 ; ""
+     C     O
+    -C     N
+ [ angles ]
+   CG1  CB   OG3   0.0   0.0
+   CG2  CB   OG3   0.0   0.0
+   CG1  CB   HB2   0.0   0.0
+   CG2  CB   HB2   0.0   0.0
+   HB1  CB   HB2   109.500    292.880 ; H1-CT-H1 or HC-CT-HC
+   HG11 CG1  HG12  109.500    292.880 ; ""
+   HG11 CG1  HG13  109.500    292.880 ; ""
+   HG12 CG1  HG13  109.500    292.880 ; ""
+   HG21 CG2  HG22  109.500    292.880 ; ""
+   HG21 CG2  HG23  109.500    292.880 ; ""
+   HG22 CG2  HG23  109.500    292.880 ; ""
+   HG11 CG1  CB    109.500    418.400 ; HC-CT-CT
+   HG12 CG1  CB    109.500    418.400 ; ""
+   HG13 CG1  CB    109.500    418.400 ; ""
+   HG21 CG2  CB    109.500    418.400 ; ""
+   HG22 CG2  CB    109.500    418.400 ; ""
+   HG23 CG2  CB    109.500    418.400 ; ""
+   HB1   CB  CA    109.500    418.400 ; ""
+   HB2   CB  CA    109.500    418.400 ; ""
+   CG1   CB CG2    109.500    334.720 ; CT-CT-CT
+    CA   CB CG1    109.500    334.720 ; ""
+    CA   CB CG2    109.500    334.720 ; ""
+    CA   CB OG3    109.500    418.400 ; CT-CT-OH
+    CB  OG3 HG31   108.500    460.240 ; CT-OH-HO
+ [ dihedrals ]
+   OG3    CB   CG1  HG11    0.0   0.0     0 ; non-phys
+   OG3    CB   CG1  HG12    0.0   0.0     0 ; non-phys
+   OG3    CB   CG1  HG13    0.0   0.0     0 ; non-phys
+   OG3    CB   CG2  HG21    0.0   0.0     0 ; non-phys
+   OG3    CB   CG2  HG22    0.0   0.0     0 ; non-phys
+   OG3    CB   CG2  HG23    0.0   0.0     0 ; non-phys
+   HB2    CB   CG1  HG11    0.0   0.0     0 ; non-phys
+   HB2    CB   CG1  HG12    0.0   0.0     0 ; non-phys
+   HB2    CB   CG1  HG13    0.0   0.0     0 ; non-phys
+   HB2    CB   CG2  HG21    0.0   0.0     0 ; non-phys
+   HB2    CB   CG2  HG22    0.0   0.0     0 ; non-phys
+   HB2    CB   CG2  HG23    0.0   0.0     0 ; non-phys
+ [ impropers ]
+    -C    CA     N     H
+    CA    +N     C     O
+
 ; ADDED by nrego
 ;  7/20/17
 [ I2A ]
@@ -4411,6 +4494,69 @@
    OG2    CB   CG1   CD1    0.0          0.0     0 ; ""
    OG2    CB   CG1   CD2    0.0          0.0     0 ; ""
   HG21    OG2   CB   CG1    0.0          0.0     0 ; ""
+ [ impropers ]
+    -C    CA     N     H
+    CA    +N     C     O
+
+[ V2St ]
+ [ atoms ]
+     N    N           -0.41570     1
+     H    H            0.27190     2
+    CA    CT          -0.08750     3
+    HA    H1           0.09690     4
+    CB    CT           0.29850     5
+   HB1    HC          -0.02970     6
+   HB2    HC               0.0     7
+   CG1    CT          -0.31920     8
+  HG11    HC           0.07910     9
+  HG12    HC           0.07910    10
+  HG13    HC           0.07910    11
+   CG2    CT          -0.31920    12
+  HG21    HC           0.07910    13
+  HG22    HC           0.07910    14
+  HG23    HC           0.07910    15
+   OG3    OH               0.0    16
+  HG31    HO               0.0    17
+     C    C            0.59730    18
+     O    O           -0.56790    19
+ [ bonds ]
+     N     H
+     N    CA
+    CA    HA
+    CA    CB
+    CA     C
+    CB   HB1
+    CB   HB2
+    CB   CG1
+    CB   CG2
+    CB   OG3
+   OG3  HG31
+   CG1  HG11
+   CG1  HG12
+   CG1  HG13
+   CG2  HG21
+   CG2  HG22
+   CG2  HG23
+     C     O
+    -C     N
+ [ angles ]
+   CG1  CB   OG3   0.0   0.0
+   CG2  CB   OG3   0.0   0.0
+   CG1  CB   HB2   0.0   0.0
+   CG2  CB   HB2   0.0   0.0
+ [ dihedrals ]
+   OG3    CB   CG1  HG11    0.0   0.0     0 ; non-phys
+   OG3    CB   CG1  HG12    0.0   0.0     0 ; non-phys
+   OG3    CB   CG1  HG13    0.0   0.0     0 ; non-phys
+   OG3    CB   CG2  HG21    0.0   0.0     0 ; non-phys
+   OG3    CB   CG2  HG22    0.0   0.0     0 ; non-phys
+   OG3    CB   CG2  HG23    0.0   0.0     0 ; non-phys
+   HB2    CB   CG1  HG11    0.0   0.0     0 ; non-phys
+   HB2    CB   CG1  HG12    0.0   0.0     0 ; non-phys
+   HB2    CB   CG1  HG13    0.0   0.0     0 ; non-phys
+   HB2    CB   CG2  HG21    0.0   0.0     0 ; non-phys
+   HB2    CB   CG2  HG22    0.0   0.0     0 ; non-phys
+   HB2    CB   CG2  HG23    0.0   0.0     0 ; non-phys
  [ impropers ]
     -C    CA     N     H
     CA    +N     C     O
