@@ -575,6 +575,20 @@ V2A 6
 1   5   HB3 CB  CA  HB1 HB2
 3   4   HG1 CG1 CB  CA  
 3   4   HG2 CG2 CB  CA  
+V2S 6
+1   1   H   N   -C  CA  
+1   5   HA  CA  N   CB  C   
+2   6   HB  CB  CA  CG1
+1   2   HG31 OG3 CB  CA
+3   4   HG1 CG1 CB  CA  
+3   4   HG2 CG2 CB  CA  
+V2St 6
+1   1   H   N   -C  CA  
+1   5   HA  CA  N   CB  C   
+2   6   HB  CB  CA  CG1
+1   2   HG31 OG3 CB  CA
+3   4   HG1 CG1 CB  CA  
+3   4   HG2 CG2 CB  CA 
 V2At 6
 1   1   H   N   -C  CA  
 1   5   HA  CA  N   CB  C   
