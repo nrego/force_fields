@@ -1,0 +1,8 @@
+[ moleculetype ]
+; molname       nrexcl
+WAL             1       ; WALL
+
+[ atoms ]
+; id    at type         res nr  residu name     at name  cg nr  charge
+1       WX              1       WAL            WX       0      0.00000
+
