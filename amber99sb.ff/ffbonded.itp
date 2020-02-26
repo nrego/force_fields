@@ -183,6 +183,7 @@ O2  C   O2           1   126.000    669.440 ; AA GLU            (SCH JPC 79,2379
 O   C   OH           1   120.000    669.440 ; 
 CA  C   CA           1   120.000    527.184 ; changed from 85.0  bsd on C6H6 nmodes; AA tyr
 CA  C   OH           1   120.000    585.760 ; AA tyr
+CA  C   OS           1   120.000    585.760 ; (NBR: ADDED 2.26.20 for YPO, phospho-tyr) (Homeyer, et al 2006)
 CA  C   OV           1   120.000    585.760 ; (ADDED) pTyr (Case et al 2012)
 C   CA  CA           1   120.000    527.184 ; changed from 85.0  bsd on C6H6 nmodes
 CA  CA  CA           1   120.000    527.184 ; changed from 85.0  bsd on C6H6 nmodes
@@ -342,6 +343,7 @@ CT  OH  HO           1   108.500    460.240 ;
 HO  OH  P            1   108.500    376.560 ; 
 CT  OS  CT           1   109.500    502.080 ; 
 CT  OS  P            1   120.500    836.800 ; 
+C   OS  P            1   120.500    836.800 ; (NBR: ADDED 2.26.20 for YPO, phospho-tyr) (Homeyer, et al 2006)
 C   OV  P            1   120.500    836.800 ; (ADDED) pTyr (Case et al 2012)
 P   OS  P            1   120.500    836.800 ; 
 OV  P   OT           1   108.230    836.800 ; (ADDED) pTyr (Case et al 2012)
@@ -385,6 +387,7 @@ NC  CM  CA  N2       4      180.00     4.60240     2	; dac guess, 9/94
 CB  NC  CA  N2       4      180.00     4.60240     2	; dac, 10/94
 NA  NC  CA  N2       4      180.00     4.60240     2	; dac, 10/94
 CA  CA  C   OH       4      180.00     4.60240     2	; 
+CA  CA  C   OS       4      180.00     4.60240     2	; (NBR: ADDED 2.26.20 for YPO, phospho-tyr) (Homeyer, et al 2006)
 CA  CA  C   OV       4      180.00     4.60240     2	; (ADDED) pTyr (Case et al 2012)
 CT  CV  CC  NA       4      180.00     4.60240     2	; 
 CT  CW  CC  NB       4      180.00     4.60240     2	; 

@@ -4577,3 +4577,111 @@
  [ impropers ]
     -C    CA     N     H
     CA    +N     C     O
+
+; Phosphorylated threonine
+; Source: N. Homeyer, A.H.C. Horn, H. Lanig, H. Sticht
+; J. Mol. Model. 2006, 12, 281-289.
+[ TPO ]
+ [ atoms ]
+     N    N           -0.51630    1
+     H    H            0.29360    2
+    CA    CT          -0.31351    3
+    HA    H1           0.21577    4
+    CB    CT           0.62386    5
+    HB    H1           0.01000    6
+   CG2    CT          -0.40680    7
+  HG21    HC           0.07166    8
+  HG22    HC           0.07166    9
+  HG23    HC           0.07166   10
+    OG    OS          -0.54523   11
+     P    P            1.36606   12
+   O1P   O2           -0.96571   13
+   O2P   O2           -0.96571   14
+   O3P   O2           -0.96571   15
+     C    C            0.53660   16
+     O    O           -0.58190   17
+ [ bonds ]
+     N     H
+     N    CA
+    CA    HA
+    CA    CB
+    CA     C
+    CB    HB
+    CB   CG2
+    CB    OG
+   CG2  HG21
+   CG2  HG22
+   CG2  HG23
+    OG     P
+     P   O1P
+     P   O2P
+     P   O3P
+     C     O
+    -C     N
+ [ impropers ]
+    -C    CA     N     H
+    CA    +N     C     O
+
+; Phospho-tyrosine
+; Same source as p-thr
+[ YPO ]
+ [ atoms ]
+     N    N           -0.51630    1
+     H    H            0.29360    2
+    CA    CT           0.14128    3
+    HA    H1           0.02798    4
+    CB    CT          -0.25117    5
+   HB1    HC           0.08193    6
+   HB2    HC           0.08193    7
+    CG    CA           0.07345    8
+   CD1    CA          -0.19808    9
+   HD1    HA           0.11250   10
+   CE1    CA          -0.25427   11
+   HE1    HA           0.16161   12
+    CZ    C            0.47701   13
+   CE2    CA          -0.25427   14
+   HE2    HA           0.16161   15
+   CD2    CA          -0.19808   16
+   HD2    HA           0.11250   17
+    OG    OS          -0.55795   18
+     P    P            1.38067   19
+   O1P   O2           -0.94355   20 
+   O2P   O2           -0.94355   21
+   O3P   O2           -0.94355   22    
+     C    C            0.53660   23
+     O    O           -0.58190   24
+ [ bonds ]
+     N     H
+     N    CA
+    CA    HA
+    CA    CB
+    CA     C
+    CB   HB1
+    CB   HB2
+    CB    CG
+    CG   CD1
+    CG   CD2
+   CD1   HD1
+   CD1   CE1
+   CE1   HE1
+   CE1    CZ
+    CZ    OG
+    CZ   CE2
+   CE2   HE2
+   CE2   CD2
+   CD2   HD2
+    OG     P
+     P   O1P
+     P   O2P
+     P   O3P
+     C     O
+    -C     N
+ [ impropers ]
+    -C    CA     N     H
+    CA    +N     C     O
+    CG   CE2   CD2   HD2
+    CZ   CD2   CE2   HE2
+   CD1    CZ   CE1   HE1
+    CG   CE1   CD1   HD1
+   CD1   CD2    CG    CB
+   CE1   CE2    CZ    OG

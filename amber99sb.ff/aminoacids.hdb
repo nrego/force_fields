@@ -604,3 +604,17 @@ L2St 7
 1   2   HG21 OG2 CB  CA
 3   4   HD1  CD1 CG1 CB  
 3   4   HD2  CD2 CG1 CB  
+TPO 4
+1   1   H   N   -C  CA
+1   5   HA  CA  N   CB  C
+1   5   HB  CB  CA  CG2 OG
+3   4   HG2 CG2 CB  CA
+YPO 7
+1   1   H   N   -C  CA
+1   5   HA  CA  N   CB  C
+2   6   HB  CB  CA  CG
+1   1   HD1 CD1 CG  CE1
+1   1   HE1 CE1 CD1 CZ
+1   1   HE2 CE2 CZ  CD2
+1   1   HD2 CD2 CG  CE2
+
