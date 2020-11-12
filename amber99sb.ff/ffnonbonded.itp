@@ -93,3 +93,16 @@ MNH3         0       0.0000  0.0000  A   0.00000e+00  0.00000e+00
 DUM          0       0.0001  0.0000  A   0.00000e+00  0.00000e+00
 ; (nrego - added WX atom type for walls)
 WX           0       16.043  0.00000 A   3.39967e-01  6.94120e-05
+; (NREGO: LIPID TYPES (FROM BERGER TYPES, SEE LEMKUHL TUTORIAL ON LIPIDS))
+   LO    8   15.9994    0.000  A 2.96000e-01 8.78640e-01 ;carbonyl O, OPLS
+  LOM    8   15.9994    0.000  A 2.96000e-01 8.78640e-01 ;carboxyl O, OPLS
+  LNL    7   14.0067    0.000  A 3.25000e-01 7.11280e-01 ;Nitrogen, OPLS
+   LC    6   12.0110    0.000  A 3.75000e-01 4.39320e-01 ;Carbonyl C, OPLS
+  LH1    6   13.0190    0.000  A 3.80000e-01 3.34720e-01 ;CH1, OPLS
+  LH2    6   14.0270    0.000  A 3.90500e-01 4.93712e-01 ;CH2, OPLS
+   LP    15  30.9738    0.000  A 3.74000e-01 8.36800e-01 ;phosphor, OPLS
+  LOS    8   15.9994    0.000  A 2.96000e-01 8.78640e-01 ;ester oxygen, OPLS
+  LP2    6   14.0270    0.000  A 3.96000e-01 3.80000e-01 ;RB CH2, Bergers LJ
+  LP3    6   15.0350    0.000  A 3.96000e-01 5.70000e-01 ;RB CH3, Bergers LJ
+  LC3    6   15.0350    0.000  A 3.96000e-01 6.06680e-01 ;CH3, OPLS
+  LC2    6   14.0270    0.000  A 3.80000e-01 4.93712e-01 ;CH2, OPLS
