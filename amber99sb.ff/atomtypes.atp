@@ -66,6 +66,7 @@ OW_spc            15.99940      ; SPC Water OW
 HW_spc             1.00800      ; SPC Water HW
 Li                 6.94000      ; lithium, ions pol:J.PhysC,11,1541,(1978)
 Zn                65.40000      ; Zn2+
+Mn                54.93800      ; Nrego - Mn2+
 HW_tip4pew         1.00800      ; tip4pEW HW
 OW_tip4pew        16.00000      ; tip4pEW OW
 HW_tip4p           1.00800      ; tip4p HW

@@ -86,6 +86,11 @@
  [ atoms ]
    ZN     Zn           2.00000     1
 
+; Manganese 2+, added by N Rego
+[ MN ]
+ [ atoms ]
+   MN     Mn           2.00000     1
+
 ; And argon, added by N Rego
 [ Ar ]
  [ atoms ]

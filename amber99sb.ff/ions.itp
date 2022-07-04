@@ -86,3 +86,14 @@ ZN              1
 [ atoms ]
 ; id    at type         res nr  residu name     at name  cg nr  charge
 1       Zn              1       ZN              ZN       1      2.00000
+
+
+; Added by N Rego - Mn2+
+[ moleculetype ]
+; molname       nrexcl
+MN              1
+
+[ atoms ]
+; id    at type         res nr  residu name     at name  cg nr  charge
+1       Mn              1       MN              MN       1      2.00000
+
