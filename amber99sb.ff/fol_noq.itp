@@ -4,9 +4,9 @@ FOL             2
 
 [ atoms ]
 ; id  at type     res nr  res name  at name  cg nr  charge    mass
-  1   OW_spc      1       FOL       OW       1      -0.8476   15.99940
-  2   HW_spc      1       FOL       HW1      1       0.4238    1.00800
-  3   HW_spc      1       FOL       HW2      1       0.4238    1.00800
+  1   OW_spc      1       FOL       OW       1       0   15.99940
+  2   HW_spc      1       FOL       HW1      1       0.    1.00800
+  3   HW_spc      1       FOL       HW2      1       0.    1.00800
 
 [ bonds ]
 ; i     j       funct   length  force.c.

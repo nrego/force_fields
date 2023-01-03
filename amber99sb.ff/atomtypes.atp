@@ -1,7 +1,3 @@
-DUM_HO             1.00800      ; Nrego - dummy hydroxyl H
-DUM_OH            16.00000      ; Nrego - dummy hydroxyl O
-DUM_HC             1.00800
-DUM_CT            12.01000
 Br                79.90000	; bromine
 BrA               79.90000      ; Nrego - bromide ion
 Ar                39.94800      ; Nrego - Argon
@@ -77,5 +73,3 @@ MW                 0.00000      ; Virtual site for tip4p/5p water point charge
 MCH3               0.00000      ; Dummy mass in rigid tetrahedral CH3 group
 MNH3               0.00000      ; Dummy mass in rigid tetrahedral NH3 group
 WX                16.04300      ; Nrego - added wall atom type
-DUM                0.00000      ; Nrego - dummy (to be frozen)
-VS                 0.00000      ; Nrego - generic virtual site
