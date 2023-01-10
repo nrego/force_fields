@@ -4690,3 +4690,131 @@
     CG   CE1   CD1   HD1
    CD1   CD2    CG    CB
    CE1   CE2    CZ    OG
+
+; Valine-Asparagine hybrid res
+[ V2N ]
+ [ atoms ]
+     N    N           -0.41570     1
+     H    H            0.27190     2
+    CA    CT          -0.08750     3
+    HA    H1           0.09690     4
+    CB    CT           0.29850     5
+   HB1    HC          -0.02970     6
+   HB2    DUM_HC       0.00000     7
+   CG1    CT          -0.31920     8
+  HG11    HC           0.07910     9
+  HG12    HC           0.07910    10
+  HG13    HC           0.07910    11
+   CG2    CT          -0.31920    12
+  HG21    HC           0.07910    13
+  HG22    HC           0.07910    14
+  HG23    HC           0.07910    15
+    CG    DUM_C        0.00000    16
+   OD1    DUM_O        0.00000    17
+   ND2    DUM_N        0.00000    18
+  HD21    DUM_H        0.00000    19
+  HD22    DUM_H        0.00000    20
+     C    C            0.59730    21
+     O    O           -0.56790    22
+ [ bonds ]
+     N     H
+     N    CA
+    CA    HA
+    CA    CB
+    CA     C
+    CB   HB1
+    CB   HB2       0.10900   284512.0 ; HC-CT
+    CB   CG1       0.15260   259408.0 ; CT-CT
+    CB   CG2       0.15260   259408.0 ; CT-CT
+    CB    CG       0.15220   265265.6 ;  C-CT
+   CG1  HG11
+   CG1  HG12
+   CG1  HG13
+   CG2  HG21
+   CG2  HG22
+   CG2  HG23
+     C     O
+    -C     N
+ [ angles ]
+     HB1  CB  HB2  109.500    292.880 ; HC-CT-HC
+     CG1  CB  CG2  109.500    334.720 ; CT-CT-CT
+      CB  CG  OD1  120.400    669.440 ; CT-C-O
+      CB  CG  ND2  116.600    585.760 ; CT-C-N
+     HB1  CB   CG  109.500    418.400 ; HC-CT-C
+     HB2  CB   CG  109.500    418.400 ; HC-CT-C
+     HB1  CB  CG1  109.500    292.880 ; HC-CT-HC
+     HB1  CB  CG2  109.500    292.880 ; HC-CT-HC
+    HG11 CG1   CB  109.500    418.400 ; CT-CT-HC
+    HG12 CG1   CB  109.500    418.400 ; CT-CT-HC
+    HG13 CG1   CB  109.500    418.400 ; CT-CT-HC
+    HG21 CG2   CB  109.500    418.400 ; CT-CT-HC
+    HG22 CG2   CB  109.500    418.400 ; CT-CT-HC
+    HG23 CG2   CB  109.500    418.400 ; CT-CT-HC
+     CG1  CB  HB1  109.500    418.400 ; CT-CT-HC
+     CG2  CB  HB1  109.500    418.400 ; CT-CT-HC
+     CG1  CB   CA  109.500    334.720 ; CT-CT-CT
+     CG2  CB   CA  109.500    334.720 ; CT-CT-CT
+     HB2  CB   CA  109.500    418.400 ; CT-CT-HC
+      CG  CB   CA  111.100    527.184 ; C-CT-CT
+     CG1  CB  HB2    0.0        0.0   ; decoupled
+     CG2  CB  HB2    0.0        0.0   ; decoupled
+     CG1  CB   CG    0.0        0.0   ; decoupled
+     CG2  CB   CG    0.0        0.0   ; decoupled
+ [ dihedrals ]
+    HG11 CG1   CB   CA   0.0      0.66944     3 ; HC-CT-CT-CT
+    HG12 CG1   CB   CA   0.0      0.66944     3 ; HC-CT-CT-CT
+    HG13 CG1   CB   CA   0.0      0.66944     3 ; HC-CT-CT-CT
+    HG21 CG2   CB   CA   0.0      0.66944     3 ; HC-CT-CT-CT
+    HG22 CG2   CB   CA   0.0      0.66944     3 ; HC-CT-CT-CT
+    HG23 CG2   CB   CA   0.0      0.66944     3 ; HC-CT-CT-CT
+    HG11 CG1   CB  HB1   0.0      0.62760     3 ; HC-CT-CT-HC
+    HG12 CG1   CB  HB1   0.0      0.62760     3 ; HC-CT-CT-HC
+    HG13 CG1   CB  HB1   0.0      0.62760     3 ; HC-CT-CT-HC
+    HG21 CG2   CB  HB1   0.0      0.62760     3 ; HC-CT-CT-HC
+    HG22 CG2   CB  HB1   0.0      0.62760     3 ; HC-CT-CT-HC
+    HG23 CG2   CB  HB1   0.0      0.62760     3 ; HC-CT-CT-HC
+     CG1  CB   CA   HA   0.0      0.65084     3 ; X-CT-CT-X
+     CG2  CB   CA   HA   0.0      0.65084     3 ; X-CT-CT-X
+      CG  CB   CA   HA   0.0      0.65084     3 ; X-CT-CT-X
+     CG1  CB   CA    N   0.0      0.65084     3 ; X-CT-CT-X
+     CG2  CB   CA    N   0.0      0.65084     3 ; X-CT-CT-X
+      CG  CB   CA    N   0.0      0.65084     3 ; X-CT-CT-X
+     CG1  CB   CA    C   0.0      0.65084     3 ; X-CT-CT-X
+     CG2  CB   CA    C   0.0      0.65084     3 ; X-CT-CT-X
+      CG  CB   CA    C   0.0      0.65084     3 ; X-CT-CT-X
+    HD21 ND2   CG   CB 180.0      6.06680     2 ; X-C-N*-X
+    HD22 ND2   CG   CB 180.0      6.06680     2 ; X-C-N*-X
+     ND2  CG   CB  HB1   0.0      0.00000     0 ; X-C-CT-X
+     ND2  CG   CB  HB2   0.0      0.00000     0 ; X-C-CT-X
+     ND2  CG   CB   CA   0.0      0.83680     1 ; CT-CT-N-C
+     ND2  CG   CB   CA   0.0      0.83680     2 ; ""
+     ND2  CG   CB   CA   0.0      1.67360     3 ; ""
+     OD1  CG   CB  HB1   0.0      3.34720     1 ; HC-CT-C-O
+     OD1  CG   CB  HB1 180.0      0.33472     3 ; ""
+     OD1  CG   CB  HB2   0.0      3.34720     1 ; HC-CT-C-O
+     OD1  CG   CB  HB2 180.0      0.33472     3 ; ""
+     OD1  CG   CB   CA   0.0      0.00000     0 ; X-C-CT-X
+     HB2  CB   CA   HA   0.0      0.65084     3 ; X-CT-CT-X
+     HB2  CB   CA    C   0.0      0.65084     3 ; X-CT-CT-X
+     HB2  CB   CA    N   0.0      0.65084     3 ; X-CT-CT-X
+    HG11 CG1   CB  HB2   0.0      0.0         0 ; decoup
+    HG12 CG1   CB  HB2   0.0      0.0         0 ; decoup
+    HG13 CG1   CB  HB2   0.0      0.0         0 ; decoup
+    HG21 CG2   CB  HB2   0.0      0.0         0 ; decoup
+    HG22 CG2   CB  HB2   0.0      0.0         0 ; decoup
+    HG23 CG2   CB  HB2   0.0      0.0         0 ; decoup
+    HG11 CG1   CB   CG   0.0      0.0         0 ; decoup
+    HG12 CG1   CB   CG   0.0      0.0         0 ; decoup
+    HG12 CG1   CB   CG   0.0      0.0         0 ; decoup
+    HG21 CG2   CB   CG   0.0      0.0         0 ; decoup
+    HG22 CG2   CB   CG   0.0      0.0         0 ; decoup
+    HG22 CG2   CB   CG   0.0      0.0         0 ; decoup
+     CG1  CB   CG  OD1   0.0      0.0         0 ; decoup
+     CG2  CB   CG  OD1   0.0      0.0         0 ; decoup
+     CG1  CB   CG  ND2   0.0      0.0         0 ; decoup
+     CG2  CB   CG  ND2   0.0      0.0         0 ; decoup
+ [ impropers ]
+    -C    CA     N     H
+    CA    +N     C     O
+    CB   ND2    CG   OD1 180.00    43.93200     2 ; X-X-C-O
+    CG  HD21   ND2  HD22 180.00     4.18400     2 ; X-X-N-H
