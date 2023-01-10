@@ -617,4 +617,19 @@ YPO 7
 1   1   HE1 CE1 CD1 CZ
 1   1   HE2 CE2 CZ  CD2
 1   1   HD2 CD2 CG  CE2
+V2N 6
+1   1   H   N   -C  CA
+1   5   HA  CA  N   CB  C 
+2   6   HB  CB  CA  CG
+3   4   HG1 CG1 CB  CA  
+3   4   HG2 CG2 CB  CA
+2   3   HD2 ND2 CG  CB
+L2N 7
+1   1   H   N   -C  CA
+1   5   HA  CA  N   CB  C 
+2   6   HB  CB  CA  CG1
+1   5   HG  CG1 CB  CE1 CE2 
+3   4   HE1 CE1 CG1 CB  
+3   4   HE2 CE2 CG1 CB 
+2   3   HD2 ND2 CG  CB
 
