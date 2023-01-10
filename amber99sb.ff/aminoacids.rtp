@@ -4873,6 +4873,8 @@
     CA    +N     C     O
     CB   ND2    CG   OD1 180.00    43.93200     2 ; X-X-C-O
     CG  HD21   ND2  HD22 180.00     4.18400     2 ; X-X-N-H
+
+; leucine/asparagine hybrid
 [ L2N ]
  [ atoms ]
      N    N           -0.41570     1
@@ -5022,6 +5024,209 @@ CG1  CB   CG  ND2   0.0      0.0         0 ; decoupled
 CE1 CG1   CB   CG   0.0      0.0         0 ; decoupled
 CE2 CG1   CB   CG   0.0      0.0         0 ; decoupled
  HG CG1   CB   CG   0.0      0.0         0 ; decoupled
+ [ impropers ]
+    -C    CA     N     H
+    CA    +N     C     O
+    CB   ND2    CG   OD1 180.00    43.93200     2 ; X-X-C-O
+    CG  HD21   ND2  HD22 180.00     4.18400     2 ; X-X-N-H
+
+; Isoleucine/asparagine hybrid res
+[ I2N ]
+ [ atoms ]
+     N    N           -0.41570     1
+     H    H            0.27190     2
+    CA    CT          -0.05970     3
+    HA    H1           0.08690     4
+    CB    CT           0.13030     5
+   HB1    HC           0.01870     6
+   HB2    DUM_HC       0.00000     7
+   CG2    CT          -0.32040     8
+  HG21    HC           0.08820     9
+  HG22    HC           0.08820    10
+  HG23    HC           0.08820    11
+   CG1    CT          -0.04300    12
+  HG11    HC           0.02360    13
+  HG12    HC           0.02360    14
+    CD    CT          -0.06600    15
+   HD1    HC           0.01860    16
+   HD2    HC           0.01860    17
+   HD3    HC           0.01860    18
+    CG    DUM_C        0.00000    19
+   OD1    DUM_O        0.00000    20
+   ND2    DUM_N        0.00000    21
+  HD21    DUM_H        0.00000    22
+  HD22    DUM_H        0.00000    23
+     C    C            0.59730    24
+     O    O           -0.56790    25
+ [ bonds ]
+     N     H
+     N    CA
+    CA    HA
+    CA    CB
+    CA     C
+    CB   HB1
+    CB   HB2       0.10900   284512.0 ; HC-CT  
+    CB   CG2       0.15260   259408.0 ; CT-CT
+    CB   CG1       0.15260   259408.0 ; CT-CT
+   CG2  HG21
+   CG2  HG22
+   CG2  HG23
+   CG1  HG11
+   CG1  HG12
+   CG1    CD
+    CD   HD1
+    CD   HD2
+    CD   HD3
+    CB    CG       0.15220   265265.6 ;  C-CT
+    CG   OD1
+    CG   ND2
+   ND2  HD21
+   ND2  HD22
+     C     O
+    -C     N
+ [ exclusions ]
+  HG21    CG
+  HG22    CG
+  HG23    CG
+  HG11    CG
+  HG12    CG
+  HG21   OD1
+  HG22   OD1
+  HG23   OD1
+  HG11   OD1
+  HG12   OD1
+  HG21   ND2
+  HG22   ND2
+  HG23   ND2
+  HG11   ND2
+  HG12   ND2
+  HG21  HD21
+  HG22  HD21
+  HG23  HD21
+  HG11  HD21
+  HG12  HD21
+  HG21  HD22
+  HG22  HD22
+  HG23  HD22
+  HG11  HD22
+  HG12  HD22
+  HG11   HB2
+  HG12   HB2
+  HG21   HB2
+  HG22   HB2
+  HG23   HB2
+   HD1   HB2
+   HD2   HB2
+   HD3   HB2
+    CD   HB2
+    CD    CG
+    CD   OD1
+    CD   ND2 
+    CD  HD21
+    CD  HD22
+   HD1    CG
+   HD2    CG
+   HD3    CG
+   HD1   OD1
+   HD2   OD1
+   HD3   OD1
+   HD1   ND2
+   HD2   ND2
+   HD3   ND2
+   HD1  HD21
+   HD1  HD22
+   HD2  HD21
+   HD2  HD22
+   HD3  HD21
+   HD3  HD22
+   CG1   OD1
+   CG2   OD1
+   CG1   ND2
+   CG2   ND2
+   CG1  HD21
+   CG1  HD22
+   CG2  HD21
+   CG2  HD22
+ [ angles ]
+ CA   CB   CG1  109.500    334.720 ; CT-CT-CT
+ CA   CB   CG2  109.500    334.720 ; CT-CT-CT
+ CA   CB    CG  111.100    527.184 ; C-CT-CT
+ CA   CB   HB2  109.500    418.400 ; CT-CT-HC
+HB1   CB   CG1  109.500    418.400 ; CT-CT-HC
+HB1   CB   CG2  109.500    418.400 ; CT-CT-HC
+HB1   CB    CG  109.500    418.400 ; HC-CT-C
+HB1   CB   HB2  109.500    292.880 ; HC-CT-HC
+ CB  CG1  HG11  109.500    418.400 ; CT-CT-HC
+ CB  CG1  HG12  109.500    418.400 ; CT-CT-HC
+ CB  CG2  HG21  109.500    418.400 ; CT-CT-HC
+ CB  CG2  HG22  109.500    418.400 ; CT-CT-HC
+ CB  CG2  HG23  109.500    418.400 ; CT-CT-HC
+ CB  CG1    CD  109.500    334.720 ; CT-CT-CT
+ CB   CG   OD1  120.400    669.440 ; CT-C-O
+ CB   CG   ND2  116.600    585.760 ; CT-C-N
+HB2   CB    CG  109.500    418.400 ; HC-CT-C
+HB2   CB   CG1    0.0         0.0  ; decoupled
+HB2   CB   CG2    0.0         0.0  ; decoupled
+ CG   CB   CG1    0.0         0.0  ; decoupled
+ CG   CB   CG2    0.0         0.0  ; decoupled
+ [ dihedrals ]
+  N  CA   CB  CG1   0.0      0.65084     3 ; X-CT-CT-X
+  N  CA   CB  CG2   0.0      0.65084     3 ; X-CT-CT-X
+  N  CA   CB   CG   0.0      0.65084     3 ; X-CT-CT-X
+  N  CA   CB  HB2   0.0      0.65084     3 ; X-CT-CT-X
+ HA  CA   CB  CG1   0.0      0.65084     3 ; X-CT-CT-X
+ HA  CA   CB  CG2   0.0      0.65084     3 ; X-CT-CT-X
+ HA  CA   CB   CG   0.0      0.65084     3 ; X-CT-CT-X
+ HA  CA   CB  HB2   0.0      0.65084     3 ; X-CT-CT-X
+  C  CA   CB  CG1   0.0      0.65084     3 ; X-CT-CT-X
+  C  CA   CB  CG2   0.0      0.65084     3 ; X-CT-CT-X
+  C  CA   CB   CG   0.0      0.65084     3 ; X-CT-CT-X
+  C  CA   CB  HB2   0.0      0.65084     3 ; X-CT-CT-X
+ CA  CB  CG1 HG11   0.0      0.66944     3 ; HC-CT-CT-CT
+ CA  CB  CG1 HG12   0.0      0.66944     3 ; HC-CT-CT-CT
+ CA  CB  CG2 HG21   0.0      0.66944     3 ; HC-CT-CT-CT
+ CA  CB  CG2 HG22   0.0      0.66944     3 ; HC-CT-CT-CT
+ CA  CB  CG2 HG23   0.0      0.66944     3 ; HC-CT-CT-CT
+ CA  CB  CG1   CD   0.0      0.75312     3 ; CT-CT-CT-CT
+ CA  CB  CG1   CD 180.0      1.04600     2 ; ""
+ CA  CB  CG1   CD 180.0      0.83680     1 ; ""
+ CA  CB   CG  OD1   0.0      0.00000     0 ; X-C-CT-X
+ CA  CB   CG  ND2   0.0      0.83680     1 ; CT-CT-C-N
+ CA  CB   CG  ND2   0.0      0.83680     2 ; ""
+ CA  CB   CG  ND2   0.0      1.67360     3 ; ""
+HB1  CB  CG1 HG11   0.0      0.62760     3 ; HC-CT-CT-HC
+HB1  CB  CG1 HG12   0.0      0.62760     3 ; HC-CT-CT-HC
+HB1  CB  CG1 HG13   0.0      0.62760     3 ; HC-CT-CT-HC
+HB1  CB  CG2 HG21   0.0      0.62760     3 ; HC-CT-CT-HC
+HB1  CB  CG2 HG22   0.0      0.62760     3 ; HC-CT-CT-HC
+HB1  CB  CG1   CD   0.0      0.66944     3 ; HC-CT-CT-CT
+HB1  CB   CG  OD1   0.0      3.34720     1 ; HC-CT-C-O
+HB1  CB   CG  OD1 180.0      0.33472     3 ; ""
+HB2  CB   CG  OD1   0.0      3.34720     1 ; HC-CT-C-O
+HB2  CB   CG  OD1 180.0      0.33472     3 ; ""
+HB1  CB   CG  ND2   0.0      0.00000     0 ; X-C-CT-X
+HB2  CB   CG  ND2   0.0      0.00000     0 ; X-C-CT-X
+ CB CG1   CD HD11   0.0      0.66944     3 ; HC-CT-CT-CT
+ CB CG1   CD HD12   0.0      0.66944     3 ; HC-CT-CT-CT
+ CB CG1   CD HD13   0.0      0.66944     3 ; HC-CT-CT-CT
+ CB  CG  ND2 HD21 180.0     10.46000     2 ; X-C-N-X
+ CB  CG  ND2 HD22 180.0     10.46000     2 ; X-C-N-X 
+ CG  CB  CG1 HG11   0.0      0.0         0 ; decoupled
+ CG  CB  CG1 HG12   0.0      0.0         0 ; decoupled
+ CG  CB  CG2 HG21   0.0      0.0         0 ; decoupled
+ CG  CB  CG2 HG22   0.0      0.0         0 ; decoupled
+ CG  CB  CG2 HG23   0.0      0.0         0 ; decoupled
+ CG  CB  CG1   CD   0.0      0.0         0 ; decoupled
+HB2  CB  CG1 HG11   0.0      0.0         0 ; decoupled
+HB2  CB  CG1 HG12   0.0      0.0         0 ; decoupled
+HB2  CB  CG2 HG21   0.0      0.0         0 ; decoupled
+HB2  CB  CG2 HG22   0.0      0.0         0 ; decoupled
+HB2  CB  CG2 HG23   0.0      0.0         0 ; decoupled
+HB2  CB  CG1   CD   0.0      0.0         0 ; decoupled
+OD1  CG   CB  CG1   0.0      0.0         0 ; decoupled
+OD1  CG   CB  CG2   0.0      0.0         0 ; decoupled
+ND2  CG   CB  CG1   0.0      0.0         0 ; decoupled
+ND2  CG   CB  CG2   0.0      0.0         0 ; decoupled
  [ impropers ]
     -C    CA     N     H
     CA    +N     C     O
