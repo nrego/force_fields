@@ -632,4 +632,21 @@ L2N 7
 3   4   HE1 CE1 CG1 CB  
 3   4   HE2 CE2 CG1 CB 
 2   3   HD2 ND2 CG  CB
-
+I2N 7
+1   1   H   N   -C  CA  
+1   5   HA  CA  N   CB  C   
+2   6   HB  CB  CA  CG
+3   4   HG2 CG2 CB  CA  
+2   6   HG1 CG1 CB  CD  
+3   4   HD  CD  CG1 CB 
+2   3   HD2 ND2 CG  CB
+M3L 9   
+1   1   H   N   -C  CA 
+1   5   HA  CA  N   CB  C
+2   6   HB  CB  CA  CG
+2   6   HG  CG  CB  CD
+2   6   HD  CD  CG  CE
+2   6   HE  CE  CD  NZ  
+3   4   HM1 CM1 NZ  CE
+3   4   HM2 CM2 NZ  CE
+3   4   HM3 CM3 NZ  CE

@@ -4852,6 +4852,8 @@
      HB2  CB   CA   HA   0.0      0.65084     3 ; X-CT-CT-X
      HB2  CB   CA    C   0.0      0.65084     3 ; X-CT-CT-X
      HB2  CB   CA    N   0.0      0.65084     3 ; X-CT-CT-X
+     OD1  CG  ND2 HD21 180.0     10.46000     2 ; H-N-C-O
+     OD1  CG  ND2 HD22   0.0      8.36800     1 ; H-N-C-O
     HG11 CG1   CB  HB2   0.0      0.0         0 ; decoup
     HG12 CG1   CB  HB2   0.0      0.0         0 ; decoup
     HG13 CG1   CB  HB2   0.0      0.0         0 ; decoup
@@ -5019,6 +5021,8 @@ HB2  CB   CG  ND2   0.0      0.00000     0 ; X-C-CT-X
  CB CG1  CE2 HE23   0.0      0.66944     3 ; HC-CT-CT-CT
  CB  CG  ND2 HD21 180.0     10.46000     2 ; X-C-N-X
  CB  CG  ND2 HD22 180.0     10.46000     2 ; X-C-N-X
+OD1  CG  ND2 HD21 180.0     10.46000     2 ; H-N-C-O
+OD1  CG  ND2 HD22   0.0      8.36800     1 ; H-N-C-O
 CG1  CB   CG  OD1   0.0      0.0         0 ; decoupled
 CG1  CB   CG  ND2   0.0      0.0         0 ; decoupled
 CE1 CG1   CB   CG   0.0      0.0         0 ; decoupled
@@ -5165,6 +5169,7 @@ HB1   CB   HB2  109.500    292.880 ; HC-CT-HC
  CB   CG   OD1  120.400    669.440 ; CT-C-O
  CB   CG   ND2  116.600    585.760 ; CT-C-N
 HB2   CB    CG  109.500    418.400 ; HC-CT-C
+CG1   CB   CG2  109.500    334.720 ; CT-CT-CT
 HB2   CB   CG1    0.0         0.0  ; decoupled
 HB2   CB   CG2    0.0         0.0  ; decoupled
  CG   CB   CG1    0.0         0.0  ; decoupled
@@ -5187,6 +5192,14 @@ HB2   CB   CG2    0.0         0.0  ; decoupled
  CA  CB  CG2 HG21   0.0      0.66944     3 ; HC-CT-CT-CT
  CA  CB  CG2 HG22   0.0      0.66944     3 ; HC-CT-CT-CT
  CA  CB  CG2 HG23   0.0      0.66944     3 ; HC-CT-CT-CT
+CG1  CB  CG2 HG21   0.0      0.66944     3 ; HC-CT-CT-CT
+CG1  CB  CG2 HG22   0.0      0.66944     3 ; HC-CT-CT-CT
+CG1  CB  CG2 HG23   0.0      0.66944     3 ; HC-CT-CT-CT
+CG2  CB  CG1 HG11   0.0      0.66944     3 ; HC-CT-CT-CT
+CG2  CB  CG1 HG12   0.0      0.66944     3 ; HC-CT-CT-CT
+CG2  CB  CG1   CD   0.0      0.75312     3 ; CT-CT-CT-CT
+CG2  CB  CG1   CD 180.0      1.04600     2 ; ""
+CG2  CB  CG1   CD 180.0      0.83680     1 ; ""
  CA  CB  CG1   CD   0.0      0.75312     3 ; CT-CT-CT-CT
  CA  CB  CG1   CD 180.0      1.04600     2 ; ""
  CA  CB  CG1   CD 180.0      0.83680     1 ; ""
@@ -5196,9 +5209,9 @@ HB2   CB   CG2    0.0         0.0  ; decoupled
  CA  CB   CG  ND2   0.0      1.67360     3 ; ""
 HB1  CB  CG1 HG11   0.0      0.62760     3 ; HC-CT-CT-HC
 HB1  CB  CG1 HG12   0.0      0.62760     3 ; HC-CT-CT-HC
-HB1  CB  CG1 HG13   0.0      0.62760     3 ; HC-CT-CT-HC
 HB1  CB  CG2 HG21   0.0      0.62760     3 ; HC-CT-CT-HC
 HB1  CB  CG2 HG22   0.0      0.62760     3 ; HC-CT-CT-HC
+HB1  CB  CG2 HG23   0.0      0.62760     3 ; HC-CT-CT-HC
 HB1  CB  CG1   CD   0.0      0.66944     3 ; HC-CT-CT-CT
 HB1  CB   CG  OD1   0.0      3.34720     1 ; HC-CT-C-O
 HB1  CB   CG  OD1 180.0      0.33472     3 ; ""
@@ -5211,6 +5224,8 @@ HB2  CB   CG  ND2   0.0      0.00000     0 ; X-C-CT-X
  CB CG1   CD HD13   0.0      0.66944     3 ; HC-CT-CT-CT
  CB  CG  ND2 HD21 180.0     10.46000     2 ; X-C-N-X
  CB  CG  ND2 HD22 180.0     10.46000     2 ; X-C-N-X 
+OD1  CG  ND2 HD21 180.0     10.46000     2 ; H-N-C-O
+OD1  CG  ND2 HD22   0.0      8.36800     1 ; H-N-C-O
  CG  CB  CG1 HG11   0.0      0.0         0 ; decoupled
  CG  CB  CG1 HG12   0.0      0.0         0 ; decoupled
  CG  CB  CG2 HG21   0.0      0.0         0 ; decoupled
@@ -5232,4 +5247,88 @@ ND2  CG   CB  CG2   0.0      0.0         0 ; decoupled
     CA    +N     C     O
     CB   ND2    CG   OD1 180.00    43.93200     2 ; X-X-C-O
     CG  HD21   ND2  HD22 180.00     4.18400     2 ; X-X-N-H
+
+; trimethyl lysine, added by Nrego from Zhang et al (Z. Lu, J. Lai, Y. Zhang, J. Am. Chem. Soc. , 2009131, 14928-14931.)
+[ M3L ]
+ [ atoms ]
+     N    N           -0.34790     1
+     H    H            0.27470     2
+    CA    CT          -0.203941    3
+    HA    H1           0.178693    4
+    CB    CT          -0.073788    5
+   HB1    HC           0.030347    6
+   HB2    HC           0.030347    7
+    CG    CT           0.005782    8
+   HG1    HC          -0.002858    9
+   HG2    HC          -0.002858   10
+    CD    CT           0.026942   11
+   HD1    HC           0.046379   12
+   HD2    HC           0.046379   13
+    CE    CT          -0.060740   14
+   HE1    HP           0.107161   15
+   HE2    HP           0.107161   16
+    NZ    N3          -0.018658   17
+   CM1    CT          -0.089046   18
+  HM11    HP           0.108810   19
+  HM12    HP           0.108810   20
+  HM13    HP           0.108810   21
+   CM2    CT          -0.089046   22
+  HM21    HP           0.108810   23
+  HM22    HP           0.108810   24
+  HM23    HP           0.108810   25
+   CM3    CT          -0.089046   26
+  HM31    HP           0.108810   27
+  HM32    HP           0.108810   28
+  HM33    HP           0.108810   29
+     C    C            0.73410    30
+     O    O           -0.58940    31
+ [ bonds ]
+     N     H
+     N    CA
+    CA    HA
+    CA    CB
+    CA     C
+    CB   HB1
+    CB   HB2
+    CB    CG
+    CG   HG1
+    CG   HG2
+    CG    CD
+    CD   HD1
+    CD   HD2
+    CD    CE
+    CE   HE1
+    CE   HE2
+    CE    NZ
+    NZ   CM1
+    NZ   CM2
+    NZ   CM3
+   CM1  HM11
+   CM1  HM12
+   CM1  HM13
+   CM2  HM21
+   CM2  HM22
+   CM2  HM23
+   CM3  HM31
+   CM3  HM32
+   CM3  HM33
+     C     O
+    -C     N
+ [ dihedrals ]
+; NOTE: Putting in B-states *First* - need to add A-states (X-CT-CT-X, etc) *before* the line in the opology file.
+  CG   CD   CE   NZ 000.0      0.65084     3 ; X-CT-CT-X -> CT-CT-CT-CT
+  CG   CD   CE   NZ 180.0      0.00000     2 ; ""
+  CG   CD   CE   NZ 180.0      0.00000     1 ; ""
+  CD   CE   NZ  CM1 000.0      0.65084     3; X-CT-N3-X
+  CD   CE   NZ  CM1 180.0      0.00000     2 ; ""
+  CD   CE   NZ  CM1 180.0      0.00000     1 ; ""
+  CD   CE   NZ  CM2 000.0      0.65084     3 ; X-CT-N3-X
+  CD   CE   NZ  CM2 180.0      0.00000     2 ; ""
+  CD   CE   NZ  CM2 180.0      0.00000     1 ; ""
+  CD   CE   NZ  CM3 000.0      0.65084     3 ; X-CT-N3-X
+  CD   CE   NZ  CM3 180.0      0.00000     2 ; ""
+  CD   CE   NZ  CM3 180.0      0.00000     1 ; ""
+ [ impropers ]
+    -C    CA     N     H
+    CA    +N     C     O
 
