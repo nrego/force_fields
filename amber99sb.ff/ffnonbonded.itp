@@ -92,7 +92,7 @@ VS           0       0.0000  0.0000  V   0.00000e+00  0.00000e+00
 MCH3         0       0.0000  0.0000  A   0.00000e+00  0.00000e+00
 MNH3         0       0.0000  0.0000  A   0.00000e+00  0.00000e+00
 ; (ADDED)
-DUM          0       0.0001  0.0000  A   0.00000e+00  0.00000e+00
+Du           0       1.008  0.0000  A   0.00000e+00  0.00000e+00
 ; (nrego - added WX atom type for walls)
 WX           0       16.043  0.00000 A   3.39967e-01  6.94120e-05
 ; (NREGO: LIPID TYPES (FROM BERGER TYPES, SEE LEMKUHL TUTORIAL ON LIPIDS))
