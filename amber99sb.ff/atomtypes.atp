@@ -73,5 +73,33 @@ MW                 0.00000      ; Virtual site for tip4p/5p water point charge
 MCH3               0.00000      ; Dummy mass in rigid tetrahedral CH3 group
 MNH3               0.00000      ; Dummy mass in rigid tetrahedral NH3 group
 WX                16.04300      ; Nrego - added wall atom type
-Du                 1.00800      ; Nrego - dummy atom
-   
+Du                 1.00800      ; Nrego - dummy atom 
+DUM_HC    1.008000
+DUM_CT   12.010000
+DUM_H1    1.008000
+DUM_N2   14.010000
+DUM_H     1.008000
+DUM_CA   12.010000
+DUM_O    16.000000
+DUM_OH   16.000000
+DUM_HO    1.008000
+DUM_N    14.010000
+DUM_O2   16.000000
+DUM_SH   32.060000
+DUM_HS    1.008000
+DUM_C    12.010000
+DUM_CC   12.010000
+DUM_NA   14.010000
+DUM_CV   12.010000
+DUM_H4    1.008000
+DUM_CR   12.010000
+DUM_H5    1.008000
+DUM_NB   14.010000
+DUM_CW   12.010000
+DUM_HP    1.008000
+DUM_N3   14.010000
+DUM_S    32.060000
+DUM_HA    1.008000
+DUM_C*   12.010000
+DUM_CB   12.010000
+DUM_CN   12.010000

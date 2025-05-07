@@ -96,11 +96,6 @@
  [ atoms ]
     Ar     Ar       0.000     0
 
-; Dummy, added by Nrego
-[ DUM ]
- [ atoms ]
-    DUM    DUM      0.000     0
-
 [ URE ] ; urea added in by EJS, resp charges by Jim Caldwell
  [ atoms ]
     C	   C          	0.880229	1	
@@ -3624,51 +3619,4 @@
  [ impropers ]
     -C    CA     N     H
     CA    +N     C     O
-
-; NBR 5/2025 hybrid val->ala
-[ V2A ]
- [ atoms ]
-     N    N           -0.41570     1
-     H    H            0.27190     2
-    CA    CT          -0.08750     3
-    HA    H1           0.09690     4
-    CB    CT           0.29850     5
-   HB3    HC          -0.02970     6
-   CG1    CT          -0.31920     7
-  HG11    HC           0.07910     8
-  HG12    HC           0.07910     9
-  HG13    HC           0.07910    10
-   CG2    CT          -0.31920    11
-  HG21    HC           0.07910    12
-  HG22    HC           0.07910    13
-  HG23    HC           0.07910    14
-     C    C            0.59730    15
-     O    O           -0.56790    16
-   HB1    Du           0.00000    17
-   HB2    Du           0.00000    18
- [ bonds ]
-     N     H
-     N    CA
-    CA    HA
-    CA    CB
-    CA     C
-    CB   HB3
-    CB   HB1
-    CB   HB2
-    CB   CG1
-    CB   CG2
-   CG1  HG11
-   CG1  HG12
-   CG1  HG13
-   CG2  HG21
-   CG2  HG22
-   CG2  HG23
-     C     O
-    -C     N
- [ impropers ]
-    -C    CA     N     H
-    CA    +N     C     O
-
-
-
 

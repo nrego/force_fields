@@ -539,9 +539,9 @@ M3L 9
 3   4   HM1 CM1 NZ  CE
 3   4   HM2 CM2 NZ  CE
 3   4   HM3 CM3 NZ  CE
-V2A 7
+V2A 5
 1   1   H     N    -C    CA
 1   5   HA    CA   N     CB   C
-3   4   HB    CB  CA  CG1 CG2
+3   4   HB    CB  CA     N
 3   4   HG1   CG1  CB    CA        
-3   4   HG2   CG2  CB    CA        
+3   4   HG2   CG2  CB    CA
