@@ -1,4 +1,4 @@
-AMBER99SB protein, nucleic AMBER94 (Hornak et al., Proteins 65, 712-725, 2006)
+AMBER99SB protein + mutant hybrid residues, nucleic AMBER94 (Hornak et al., Proteins 65, 712-725, 2006)
 
 ********************************************************************
 * The original ffamber ports were written by Eric J. Sorin,        *
